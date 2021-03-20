@@ -38,7 +38,7 @@
               </ng-template>
               <div class="fc-form-error" *ngIf="userName.invalid && (userName.dirty || userName.touched)">
                 <div *ngIf="userName.errors.required">
-                  用户名不能为空.
+                  用户名不能为空！
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@
               <div class="fc-form-error"
                 *ngIf="passwordValid.invalid && (passwordValid.dirty || passwordValid.touched)">
                 <div *ngIf="passwordValid.errors.required">
-                  密码不能为空.
+                  密码不能为空！
                 </div>
               </div>
             </div>
@@ -80,11 +80,6 @@
             <div class="user-box login-btn">
 
               <button nz-button nzType="primary" (click)="login()" [nzBlock]="true">登录</button>
-            </div>
-            <div class="google-download">
-              <p>本系统仅支持
-                <a href="../assets/browser/chromedev_x64-v71.0.3554.0.exe">谷歌</a>和<a
-                  href="../assets/browser/360cse_9.5.0.138.exe">360急速</a>浏览器</p>
             </div>
           </form>
         </div>
