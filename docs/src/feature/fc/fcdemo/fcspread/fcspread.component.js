@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: spread
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-16 10:43:11
  */
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let FcspreadComponent = class FcspreadComponent {
     constructor(router, activedRoute) {
         this.router = router;

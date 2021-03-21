@@ -1,10 +1,10 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2020-02-20 21:23:25
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2020-02-20 21:23:25
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 /*
 * Mock async observables that return asynchronously.

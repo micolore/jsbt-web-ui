@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: spread\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 14:42:08\r\n -->\r\n<div class=\"page\">\r\n  <div class=\"fc-toolbar\">\r\n    <button nz-button nzType=\"primary\">新增</button>\r\n    <button nz-button nzType=\"primary\">修改</button>\r\n    <button nz-button nzType=\"primary\">删除</button>\r\n  </div>\r\n  <div class=\"fc-spread-content\">\r\n    <gc-spread-sheets (workbookInitialized)=\"workbookInit($event)\" [hostStyle]=\"spreadStyle\">\r\n    </gc-spread-sheets>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: spread\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 14:42:08\r\n -->\r\n<div class=\"page\">\r\n  <div class=\"fc-toolbar\">\r\n    <button nz-button nzType=\"primary\">新增</button>\r\n    <button nz-button nzType=\"primary\">修改</button>\r\n    <button nz-button nzType=\"primary\">删除</button>\r\n  </div>\r\n  <div class=\"fc-spread-content\">\r\n    <gc-spread-sheets (workbookInitialized)=\"workbookInit($event)\" [hostStyle]=\"spreadStyle\">\r\n    </gc-spread-sheets>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -984,10 +984,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: spread
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-16 10:43:11
  */
@@ -1048,12 +1048,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_assets_plugin_spread_gc_spread_sheets_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/assets/plugin/spread/gc.spread.sheets.angular */ "./src/assets/plugin/spread/gc.spread.sheets.angular.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 

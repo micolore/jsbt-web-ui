@@ -302,7 +302,7 @@ var menus = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 错误\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-02-18 10:59:15\r\n * @LastEditTime: 2019-08-05 10:05:57\r\n -->\r\nerror页面,这是一个错误\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 错误\r\n * @email:  \r\n * @Date: 2019-02-18 10:59:15\r\n * @LastEditTime: 2019-08-05 10:05:57\r\n -->\r\nerror页面,这是一个错误\r\n"
 
 /***/ }),
 
@@ -313,7 +313,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-07-04 17:15:57\r\n * @LastEditors: honghong\r\n * @LastEditTime: 2019-10-15 10:45:00\r\n * @Description: \r\n * @email: 3300536651@qq.com\r\n -->\r\n<div class=\"edituser-dialog\">\r\n  <form nz-form [formGroup]=\"validateForm\">\r\n    <nz-form-item>\r\n      <nz-form-label [nzSm]=\"6\" [nzXs]=\"24\" nzRequired nzFor=\"oldPassword\">旧密码</nz-form-label>\r\n      <nz-form-control [nzSm]=\"14\" [nzXs]=\"24\" nzErrorTip=\"旧密码不能为空!\">\r\n        <input nz-input type=\"password\" formControlName=\"oldPassword\" id=\"oldPassword\" />\r\n      </nz-form-control>\r\n    </nz-form-item>\r\n    <nz-form-item>\r\n      <nz-form-label [nzSm]=\"6\" [nzXs]=\"24\" nzFor=\"newPassword\" nzRequired>新密码</nz-form-label>\r\n      <nz-form-control [nzSm]=\"14\" [nzXs]=\"24\" nzErrorTip=\"新密码不能为空!\">\r\n        <input nz-input type=\"password\" id=\"newPassword\" formControlName=\"newPassword\" />\r\n      </nz-form-control>\r\n    </nz-form-item>\r\n  </form>\r\n  <div class=\"edituser-dialog-footer\">\r\n    <button nz-button nzSize=\"large\" style=\"margin-right: 10px;\" [nzType]=\"'default'\"\r\n      (click)=\"handleCancel()\">取消</button>\r\n    <button nz-button nzSize=\"large\" [nzType]=\"'primary'\" (click)=\"handleOk()\">确认修改</button>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @Date: 2019-07-04 17:15:57\r\n * @LastEditors: kubrick\r\n * @LastEditTime: 2019-10-15 10:45:00\r\n * @Description: \r\n * @email:  \r\n -->\r\n<div class=\"edituser-dialog\">\r\n  <form nz-form [formGroup]=\"validateForm\">\r\n    <nz-form-item>\r\n      <nz-form-label [nzSm]=\"6\" [nzXs]=\"24\" nzRequired nzFor=\"oldPassword\">旧密码</nz-form-label>\r\n      <nz-form-control [nzSm]=\"14\" [nzXs]=\"24\" nzErrorTip=\"旧密码不能为空!\">\r\n        <input nz-input type=\"password\" formControlName=\"oldPassword\" id=\"oldPassword\" />\r\n      </nz-form-control>\r\n    </nz-form-item>\r\n    <nz-form-item>\r\n      <nz-form-label [nzSm]=\"6\" [nzXs]=\"24\" nzFor=\"newPassword\" nzRequired>新密码</nz-form-label>\r\n      <nz-form-control [nzSm]=\"14\" [nzXs]=\"24\" nzErrorTip=\"新密码不能为空!\">\r\n        <input nz-input type=\"password\" id=\"newPassword\" formControlName=\"newPassword\" />\r\n      </nz-form-control>\r\n    </nz-form-item>\r\n  </form>\r\n  <div class=\"edituser-dialog-footer\">\r\n    <button nz-button nzSize=\"large\" style=\"margin-right: 10px;\" [nzType]=\"'default'\"\r\n      (click)=\"handleCancel()\">取消</button>\r\n    <button nz-button nzSize=\"large\" [nzType]=\"'primary'\" (click)=\"handleOk()\">确认修改</button>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -324,7 +324,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-07-04 17:15:57\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 整体布局，包括顶部工具栏、左侧导航、侧边栏、选项卡导航、内容区\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-16 15:57:43\r\n * @LastEditTime: 2019-10-16 17:44:42\r\n -->\r\n<nz-layout class=\"layout\">\r\n  <!-- 顶部工具栏 -->\r\n  <nz-header>\r\n    <div class=\"logo fc-header-left\">\r\n      <img src=\"assets/image/logo.png\" [ngStyle]=\"{'display': menuWidth===64 ?'none':'inline'}\" alt=\"logo\">\r\n      <img src=\"assets/image/small-logo.png\" [ngStyle]=\"{'display': menuWidth===64 ?'inline':'none'}\" alt=\"logo\">\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <i class=\"icon iconfont fc-header-toggle\"\r\n          [ngClass]=\"{'fc-icon-menufold-left':menuWidth===64,'fc-icon-menufold-right':menuWidth!==64}\"\r\n          (click)=\"toggleLayout()\"></i>\r\n      </div>\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <a href=\"https://github.com/FE-free/fc-angular\" target=\"_blank\"\r\n          title=\"icon iconfont fc-icon-github fc-header-github\"><i\r\n            class=\"icon iconfont fc-icon-github fc-header-github\"></i></a>\r\n      </div>\r\n    </div>\r\n    <div class=\"fc-header-right\">\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <i class=\"icon iconfont fc-header-icon fc-icon-information\" (click)=\"toggleSidebar()\" title=\"消息\"></i>\r\n      </div>\r\n      <div class=\"fc-header-icon-wrap fc-header-dropdown\">\r\n        <a nz-dropdown [nzDropdownMenu]=\"headerMenu\" [nzPlacement]=\"'bottomRight'\" [nzOverlayStyle]=\"{top:'18px' }\">\r\n          <nz-avatar class=\"avatar\" [nzSize]=\"32\" nzIcon=\"user\" [nzSrc]=\"avatar\"></nz-avatar>\r\n          <a class=\"text\">{{companyName}}</a>\r\n        </a>\r\n        <nz-dropdown-menu #headerMenu=\"nzDropdownMenu\">\r\n          <ul nz-menu>\r\n            <li nz-menu-item> <i class=\"icon iconfont fc-header-icon fc-icon-peizhi\"></i> 设置\r\n            </li>\r\n            <li nz-menu-item> <i class=\"icon iconfont fc-header-icon fc-icon-personnel\"></i> 个人中心\r\n            </li>\r\n            <li nz-menu-item (click)=\"editPassWord()\"> <i class=\"icon iconfont fc-header-icon fc-icon-password\"></i>\r\n              修改密码\r\n            </li>\r\n            <li nz-menu-item (click)=\"clearCache()\"> <i class=\"icon iconfont fc-header-icon fc-icon-clear\"></i>\r\n              清除缓存\r\n            </li>\r\n            <li nz-menu-item (click)=\"siginout()\"> <i class=\" icon iconfont fc-header-icon fc-icon-tuichu\"></i> 退出\r\n            </li>\r\n          </ul>\r\n        </nz-dropdown-menu>\r\n      </div>\r\n    </div>\r\n  </nz-header>\r\n  <nz-layout style=\"width: 100%;\">\r\n    <!-- 菜单导航 -->\r\n    <nz-sider [(nzWidth)]=\"menuWidth\" Ø class=\"fc-sidebar-menu\">\r\n      <ul nz-menu [nzMode]=\"'inline'\" style=\"height: calc(100% - 40px);overflow: auto;\"\r\n        [nzInlineCollapsed]=\"menuIsCollapsed\">\r\n        <ng-container *ngFor=\"let menu of _menus\">\r\n          <!-- 一级菜单，没有下级 -->\r\n          <li nz-menu-item *ngIf=\"menu.HASCHILD==='N'\" (click)=\"selectedMenu(menu)\">\r\n            <span title>\r\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\r\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span>\r\n            </span>\r\n          </li>\r\n          <!-- 一级菜单，有下级 -->\r\n          <li nz-submenu [nzOpen]=\"true\"\r\n            *ngIf=\"menu.HASCHILD==='Y' && menu.P_CHILDMENUS && menu.P_CHILDMENUS.length!==0\">\r\n            <span title>\r\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\r\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span></span>\r\n            <ul>\r\n              <ng-container *ngFor=\"let childMenu of menu.P_CHILDMENUS\">\r\n                <!-- 二级菜单，没有下级 -->\r\n                <li nz-menu-item *ngIf=\"childMenu.HASCHILD==='N'\" (click)=\"selectedMenu(childMenu);\">\r\n                  <span title>\r\n                    <span>{{childMenu.MENUNAME}}</span>\r\n                  </span>\r\n                </li>\r\n                <!-- 二级菜单，有下级 -->\r\n                <li nz-submenu\r\n                  *ngIf=\"childMenu.HASCHILD==='Y' && childMenu.P_CHILDMENUS && childMenu.P_CHILDMENUS.length!==0\">\r\n                  <span title>\r\n                    <i class=\"icon iconfont menu-icon\" [ngClass]=\"childMenu.MENUICON\"></i>\r\n                    <span>{{childMenu.MENUNAME}}</span>\r\n                  </span>\r\n                  <ul>\r\n                    <ng-container *ngFor=\"let grandSonMenu of childMenu.P_CHILDMENUS\">\r\n                      <!-- 三级级菜单，没有下级 -->\r\n                      <li nz-menu-item *ngIf=\"grandSonMenu.HASCHILD==='N'\" (click)=\"selectedMenu(grandSonMenu);\">\r\n                        <span title>\r\n                          {{grandSonMenu.MENUNAME}}</span>\r\n                      </li>\r\n                      <!-- 三级菜单，有下级 -->\r\n                      <li nz-submenu\r\n                        *ngIf=\"grandSonMenu.HASCHILD==='Y' && grandSonMenu.P_CHILDMENUS && grandSonMenu.P_CHILDMENUS.length!==0\">\r\n                        <span title>\r\n                          {{grandSonMenu.MENUNAME}}</span>\r\n                        <ul>\r\n                          <li nz-menu-item *ngFor=\"let lastChidMenu of grandSonMenu.P_CHILDMENUS\"\r\n                            (click)=\"selectedMenu(lastChidMenu)\">\r\n                            <span title>\r\n                              {{lastChidMenu.MENUNAME}}</span>\r\n                          </li>\r\n                        </ul>\r\n                      </li>\r\n                    </ng-container>\r\n                  </ul>\r\n                </li>\r\n              </ng-container>\r\n            </ul>\r\n          </li>\r\n        </ng-container>\r\n      </ul>\r\n      <!-- 切换布局控制按钮 -->\r\n      <div class=\"layout-toggle\">\r\n        <i class=\"icon iconfont fc-icon-arrowleft\" [ngClass]=\"{'arrowright':menuWidth===64}\" (click)=\"toggleLayout()\">\r\n        </i>\r\n      </div>\r\n    </nz-sider>\r\n    <nz-layout>\r\n      <!-- 选项卡导航 -->\r\n      <nz-tabset class=\"fc-tabnav\" [nzType]=\"'line'\" [nzSize]=\"'small'\" [(nzSelectedIndex)]=\"fcSelectedIndex\">\r\n        <nz-tab *ngFor=\"let tab of fcTabs;index as i\" (nzClick)=\"selectedTabMenu(tab)\" [nzTitle]=\"titleTemplate\">\r\n          <ng-template #titleTemplate>\r\n            <div [ngClass]=\"{'tab-home':i===0}\">\r\n              <i *ngIf=\"tab.icon!==''\" class=\"icon iconfont\" [ngClass]=\"tab.icon\"></i>\r\n              {{ tab.name }}<i *ngIf=\"i>0\" nz-icon type=\"close\" class=\"ant-tabs-close-x\" (click)=\"closeTabNav(tab)\"></i>\r\n            </div>\r\n          </ng-template>\r\n        </nz-tab>\r\n      </nz-tabset>\r\n      <!-- 内容区 -->\r\n      <nz-content class=\"fc-main-wrap\">\r\n        <div class=\"fc-main\">\r\n          <router-outlet [ngStyle]=\"{'height':'100%'}\"></router-outlet>\r\n        </div>\r\n      </nz-content>\r\n    </nz-layout>\r\n  </nz-layout>\r\n</nz-layout>\r\n<!-- 消息侧边栏 -->\r\n<div class=\"navside\">\r\n  <nz-drawer [nzWidth]=\"300\" [nzWrapClassName]=\"'navside-drawer'\" [nzMaskStyle]=\"{'height':'auto'}\"\r\n    nzWrapClassName=\"navside-drawer\" [nzClosable]=\"false\" [nzVisible]=\"navsideVisible\" nzPlacement=\"right\" nzTitle=\"\"\r\n    (nzOnClose)=\"closeNavSide()\" #navside>\r\n    <nz-tabset>\r\n      <nz-tab [nzTitle]=\"noReadTemplate\">\r\n        <ng-template #noReadTemplate>未读消息</ng-template>\r\n        <div class=\"navside-message navside-message-noread\">\r\n          <nz-list [nzDataSource]=\"noReadMessage\" [nzBordered]=\"false\" [nzSplit]=\"false\" [nzFooter]=\"'共有 50 条消息.'\"\r\n            [nzRenderItem]=\"noReadItem\">\r\n            <ng-template #noReadItem let-item>\r\n              <nz-list-item>\r\n                <span class=\"ant-typography navside-information-icon\"><i\r\n                    class=\"icon iconfont fc-header-icon fc-icon-xiaoxi\"></i></span>\r\n                <div class=\"navside-item-content\">\r\n                  <div class=\"navside-title\"> {{ item.title }}</div>\r\n                  <div class=\"navside-time\"> {{ item.time }}</div>\r\n                </div>\r\n              </nz-list-item>\r\n            </ng-template>\r\n          </nz-list>\r\n        </div>\r\n      </nz-tab>\r\n      <nz-tab [nzTitle]=\"isReadTemplate\">\r\n        <ng-template #isReadTemplate>已读消息</ng-template>\r\n        <div class=\"navside-message navside-message-isread\">\r\n          <nz-list [nzDataSource]=\"isReadMessage\" [nzBordered]=\"false\" [nzSplit]=\"false\" [nzFooter]=\"'共有 50 条消息.'\"\r\n            [nzRenderItem]=\"isReadItem\">\r\n            <ng-template #isReadItem let-item>\r\n              <nz-list-item>\r\n                <span class=\"ant-typography navside-information-icon\"><i\r\n                    class=\"icon iconfont fc-header-icon fc-icon-xiaoxi\"></i></span>\r\n                <div class=\"navside-item-content\">\r\n                  <div class=\"navside-title\"> {{ item.title }}</div>\r\n                  <div class=\"navside-time\"> {{ item.time }}</div>\r\n                </div>\r\n              </nz-list-item>\r\n            </ng-template>\r\n          </nz-list>\r\n        </div>\r\n      </nz-tab>\r\n    </nz-tabset>\r\n  </nz-drawer>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 整体布局，包括顶部工具栏、左侧导航、侧边栏、选项卡导航、内容区\r\n * @email:  \r\n * @Date:  2021-03-21 15:57:43\r\n * @LastEditTime: 2019-10-16 17:44:42\r\n -->\r\n<nz-layout class=\"layout\">\r\n  <!-- 顶部工具栏 -->\r\n  <nz-header>\r\n    <div class=\"logo fc-header-left\">\r\n      <img src=\"assets/image/logo.png\" [ngStyle]=\"{'display': menuWidth===64 ?'none':'inline'}\" alt=\"logo\">\r\n      <img src=\"assets/image/small-logo.png\" [ngStyle]=\"{'display': menuWidth===64 ?'inline':'none'}\" alt=\"logo\">\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <i class=\"icon iconfont fc-header-toggle\"\r\n          [ngClass]=\"{'fc-icon-menufold-left':menuWidth===64,'fc-icon-menufold-right':menuWidth!==64}\"\r\n          (click)=\"toggleLayout()\"></i>\r\n      </div>\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <a href=\"https://github.com/FE-free/fc-angular\" target=\"_blank\"\r\n          title=\"icon iconfont fc-icon-github fc-header-github\"><i\r\n            class=\"icon iconfont fc-icon-github fc-header-github\"></i></a>\r\n      </div>\r\n    </div>\r\n    <div class=\"fc-header-right\">\r\n      <div class=\"fc-header-icon-wrap\">\r\n        <i class=\"icon iconfont fc-header-icon fc-icon-information\" (click)=\"toggleSidebar()\" title=\"消息\"></i>\r\n      </div>\r\n      <div class=\"fc-header-icon-wrap fc-header-dropdown\">\r\n        <a nz-dropdown [nzDropdownMenu]=\"headerMenu\" [nzPlacement]=\"'bottomRight'\" [nzOverlayStyle]=\"{top:'18px' }\">\r\n          <nz-avatar class=\"avatar\" [nzSize]=\"32\" nzIcon=\"user\" [nzSrc]=\"avatar\"></nz-avatar>\r\n          <a class=\"text\">{{companyName}}</a>\r\n        </a>\r\n        <nz-dropdown-menu #headerMenu=\"nzDropdownMenu\">\r\n          <ul nz-menu>\r\n            <li nz-menu-item> <i class=\"icon iconfont fc-header-icon fc-icon-peizhi\"></i> 设置\r\n            </li>\r\n            <li nz-menu-item> <i class=\"icon iconfont fc-header-icon fc-icon-personnel\"></i> 个人中心\r\n            </li>\r\n            <li nz-menu-item (click)=\"editPassWord()\"> <i class=\"icon iconfont fc-header-icon fc-icon-password\"></i>\r\n              修改密码\r\n            </li>\r\n            <li nz-menu-item (click)=\"clearCache()\"> <i class=\"icon iconfont fc-header-icon fc-icon-clear\"></i>\r\n              清除缓存\r\n            </li>\r\n            <li nz-menu-item (click)=\"siginout()\"> <i class=\" icon iconfont fc-header-icon fc-icon-tuichu\"></i> 退出\r\n            </li>\r\n          </ul>\r\n        </nz-dropdown-menu>\r\n      </div>\r\n    </div>\r\n  </nz-header>\r\n  <nz-layout style=\"width: 100%;\">\r\n    <!-- 菜单导航 -->\r\n    <nz-sider [(nzWidth)]=\"menuWidth\" Ø class=\"fc-sidebar-menu\">\r\n      <ul nz-menu [nzMode]=\"'inline'\" style=\"height: calc(100% - 40px);overflow: auto;\"\r\n        [nzInlineCollapsed]=\"menuIsCollapsed\">\r\n        <ng-container *ngFor=\"let menu of _menus\">\r\n          <!-- 一级菜单，没有下级 -->\r\n          <li nz-menu-item *ngIf=\"menu.HASCHILD==='N'\" (click)=\"selectedMenu(menu)\">\r\n            <span title>\r\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\r\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span>\r\n            </span>\r\n          </li>\r\n          <!-- 一级菜单，有下级 -->\r\n          <li nz-submenu [nzOpen]=\"true\"\r\n            *ngIf=\"menu.HASCHILD==='Y' && menu.P_CHILDMENUS && menu.P_CHILDMENUS.length!==0\">\r\n            <span title>\r\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\r\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span></span>\r\n            <ul>\r\n              <ng-container *ngFor=\"let childMenu of menu.P_CHILDMENUS\">\r\n                <!-- 二级菜单，没有下级 -->\r\n                <li nz-menu-item *ngIf=\"childMenu.HASCHILD==='N'\" (click)=\"selectedMenu(childMenu);\">\r\n                  <span title>\r\n                    <span>{{childMenu.MENUNAME}}</span>\r\n                  </span>\r\n                </li>\r\n                <!-- 二级菜单，有下级 -->\r\n                <li nz-submenu\r\n                  *ngIf=\"childMenu.HASCHILD==='Y' && childMenu.P_CHILDMENUS && childMenu.P_CHILDMENUS.length!==0\">\r\n                  <span title>\r\n                    <i class=\"icon iconfont menu-icon\" [ngClass]=\"childMenu.MENUICON\"></i>\r\n                    <span>{{childMenu.MENUNAME}}</span>\r\n                  </span>\r\n                  <ul>\r\n                    <ng-container *ngFor=\"let grandSonMenu of childMenu.P_CHILDMENUS\">\r\n                      <!-- 三级级菜单，没有下级 -->\r\n                      <li nz-menu-item *ngIf=\"grandSonMenu.HASCHILD==='N'\" (click)=\"selectedMenu(grandSonMenu);\">\r\n                        <span title>\r\n                          {{grandSonMenu.MENUNAME}}</span>\r\n                      </li>\r\n                      <!-- 三级菜单，有下级 -->\r\n                      <li nz-submenu\r\n                        *ngIf=\"grandSonMenu.HASCHILD==='Y' && grandSonMenu.P_CHILDMENUS && grandSonMenu.P_CHILDMENUS.length!==0\">\r\n                        <span title>\r\n                          {{grandSonMenu.MENUNAME}}</span>\r\n                        <ul>\r\n                          <li nz-menu-item *ngFor=\"let lastChidMenu of grandSonMenu.P_CHILDMENUS\"\r\n                            (click)=\"selectedMenu(lastChidMenu)\">\r\n                            <span title>\r\n                              {{lastChidMenu.MENUNAME}}</span>\r\n                          </li>\r\n                        </ul>\r\n                      </li>\r\n                    </ng-container>\r\n                  </ul>\r\n                </li>\r\n              </ng-container>\r\n            </ul>\r\n          </li>\r\n        </ng-container>\r\n      </ul>\r\n      <!-- 切换布局控制按钮 -->\r\n      <div class=\"layout-toggle\">\r\n        <i class=\"icon iconfont fc-icon-arrowleft\" [ngClass]=\"{'arrowright':menuWidth===64}\" (click)=\"toggleLayout()\">\r\n        </i>\r\n      </div>\r\n    </nz-sider>\r\n    <nz-layout>\r\n      <!-- 选项卡导航 -->\r\n      <nz-tabset class=\"fc-tabnav\" [nzType]=\"'line'\" [nzSize]=\"'small'\" [(nzSelectedIndex)]=\"fcSelectedIndex\">\r\n        <nz-tab *ngFor=\"let tab of fcTabs;index as i\" (nzClick)=\"selectedTabMenu(tab)\" [nzTitle]=\"titleTemplate\">\r\n          <ng-template #titleTemplate>\r\n            <div [ngClass]=\"{'tab-home':i===0}\">\r\n              <i *ngIf=\"tab.icon!==''\" class=\"icon iconfont\" [ngClass]=\"tab.icon\"></i>\r\n              {{ tab.name }}<i *ngIf=\"i>0\" nz-icon type=\"close\" class=\"ant-tabs-close-x\" (click)=\"closeTabNav(tab)\"></i>\r\n            </div>\r\n          </ng-template>\r\n        </nz-tab>\r\n      </nz-tabset>\r\n      <!-- 内容区 -->\r\n      <nz-content class=\"fc-main-wrap\">\r\n        <div class=\"fc-main\">\r\n          <router-outlet [ngStyle]=\"{'height':'100%'}\"></router-outlet>\r\n        </div>\r\n      </nz-content>\r\n    </nz-layout>\r\n  </nz-layout>\r\n</nz-layout>\r\n<!-- 消息侧边栏 -->\r\n<div class=\"navside\">\r\n  <nz-drawer [nzWidth]=\"300\" [nzWrapClassName]=\"'navside-drawer'\" [nzMaskStyle]=\"{'height':'auto'}\"\r\n    nzWrapClassName=\"navside-drawer\" [nzClosable]=\"false\" [nzVisible]=\"navsideVisible\" nzPlacement=\"right\" nzTitle=\"\"\r\n    (nzOnClose)=\"closeNavSide()\" #navside>\r\n    <nz-tabset>\r\n      <nz-tab [nzTitle]=\"noReadTemplate\">\r\n        <ng-template #noReadTemplate>未读消息</ng-template>\r\n        <div class=\"navside-message navside-message-noread\">\r\n          <nz-list [nzDataSource]=\"noReadMessage\" [nzBordered]=\"false\" [nzSplit]=\"false\" [nzFooter]=\"'共有 50 条消息.'\"\r\n            [nzRenderItem]=\"noReadItem\">\r\n            <ng-template #noReadItem let-item>\r\n              <nz-list-item>\r\n                <span class=\"ant-typography navside-information-icon\"><i\r\n                    class=\"icon iconfont fc-header-icon fc-icon-xiaoxi\"></i></span>\r\n                <div class=\"navside-item-content\">\r\n                  <div class=\"navside-title\"> {{ item.title }}</div>\r\n                  <div class=\"navside-time\"> {{ item.time }}</div>\r\n                </div>\r\n              </nz-list-item>\r\n            </ng-template>\r\n          </nz-list>\r\n        </div>\r\n      </nz-tab>\r\n      <nz-tab [nzTitle]=\"isReadTemplate\">\r\n        <ng-template #isReadTemplate>已读消息</ng-template>\r\n        <div class=\"navside-message navside-message-isread\">\r\n          <nz-list [nzDataSource]=\"isReadMessage\" [nzBordered]=\"false\" [nzSplit]=\"false\" [nzFooter]=\"'共有 50 条消息.'\"\r\n            [nzRenderItem]=\"isReadItem\">\r\n            <ng-template #isReadItem let-item>\r\n              <nz-list-item>\r\n                <span class=\"ant-typography navside-information-icon\"><i\r\n                    class=\"icon iconfont fc-header-icon fc-icon-xiaoxi\"></i></span>\r\n                <div class=\"navside-item-content\">\r\n                  <div class=\"navside-title\"> {{ item.title }}</div>\r\n                  <div class=\"navside-time\"> {{ item.time }}</div>\r\n                </div>\r\n              </nz-list-item>\r\n            </ng-template>\r\n          </nz-list>\r\n        </div>\r\n      </nz-tab>\r\n    </nz-tabset>\r\n  </nz-drawer>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -335,7 +335,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 锁屏页面\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 10:09:46\r\n -->\r\n\r\n锁屏"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 锁屏页面\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 10:09:46\r\n -->\r\n\r\n锁屏"
 
 /***/ }),
 
@@ -379,7 +379,7 @@ module.exports = "<div [id]=\"fcId\"></div>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-10-14 10:52:01\r\n * @LastEditors: honghong\r\n * @LastEditTime: 2019-10-14 15:09:28\r\n * @Description: \r\n * @email: 3300536651@qq.com\r\n -->\r\n<div id=\"mountNode\"></div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @Date: 2019-10-14 10:52:01\r\n * @LastEditors: kubrick\r\n * @LastEditTime: 2019-10-14 15:09:28\r\n * @Description: \r\n * @email:  \r\n -->\r\n<div id=\"mountNode\"></div>\r\n"
 
 /***/ }),
 
@@ -401,7 +401,7 @@ module.exports = "<div [id]=\"fcId\"></div>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 图片查看组件\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-16 15:57:43\r\n * @LastEditTime: 2019-04-17 10:45:21\r\n -->\r\n<div class=\"imgview-wrap\" >\r\n  <div class=\"imgview-content\">\r\n    <img class=\"imgview-detail\" [ngStyle]=\"styleJsonStr\" [draggable]=\"true\" (dragstart)=\"dargStart($event)\"\r\n      (drag)=\"drag($event)\" (dragend)=\"dragEnd($event)\" #imgDetail [src]=\"imgSrc\" alt=\"图片\" width=\"100%\">\r\n  </div>\r\n  <div class=\"imgview-toolbar\" [hidden] =\"hidden\">\r\n    <span class=\"toolbar-action\" (click)=\"enlarge($event)\">\r\n      <i class=\"icon anticon icon-pluscircleo\" title=\"放大\"></i>\r\n    </span>\r\n    <span class=\"toolbar-action\" (click)=\"narrow($event)\">\r\n      <i class=\"icon anticon icon-minuscircleo\" title=\"缩小\"></i>\r\n    </span>\r\n    <!-- <span class=\"toolbar-action\" (click)=\"qp($event)\">\r\n      <i class=\"icon iconfont fc-icon-magnify\" title=\"全屏\"></i>\r\n    </span> -->\r\n    <span class=\"toolbar-action\" (click)=\"recovery($event)\">\r\n      <i class=\"icon anticon icon-reload1\" title=\"恢复\"></i>\r\n    </span>\r\n  </div>\r\n</div>\r\n\r\n<!-- <div class=\"imgview-content\" *ngIf=\"currentPage === 1\">\r\n  <img class=\"imgview-detail\" [ngStyle]=\"styleJsonStr\" [draggable]=\"true\" (dragstart)=\"dargStart($event)\"\r\n    (drag)=\"drag($event)\" (dragend)=\"dragEnd($event)\" #imgDetail [src]=\"imgSrc\" alt=\"图片\" width=\"100%\">\r\n</div> -->"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 图片查看组件\r\n * @email:  \r\n * @Date:  2021-03-21 15:57:43\r\n * @LastEditTime: 2019-04-17 10:45:21\r\n -->\r\n<div class=\"imgview-wrap\" >\r\n  <div class=\"imgview-content\">\r\n    <img class=\"imgview-detail\" [ngStyle]=\"styleJsonStr\" [draggable]=\"true\" (dragstart)=\"dargStart($event)\"\r\n      (drag)=\"drag($event)\" (dragend)=\"dragEnd($event)\" #imgDetail [src]=\"imgSrc\" alt=\"图片\" width=\"100%\">\r\n  </div>\r\n  <div class=\"imgview-toolbar\" [hidden] =\"hidden\">\r\n    <span class=\"toolbar-action\" (click)=\"enlarge($event)\">\r\n      <i class=\"icon anticon icon-pluscircleo\" title=\"放大\"></i>\r\n    </span>\r\n    <span class=\"toolbar-action\" (click)=\"narrow($event)\">\r\n      <i class=\"icon anticon icon-minuscircleo\" title=\"缩小\"></i>\r\n    </span>\r\n    <!-- <span class=\"toolbar-action\" (click)=\"qp($event)\">\r\n      <i class=\"icon iconfont fc-icon-magnify\" title=\"全屏\"></i>\r\n    </span> -->\r\n    <span class=\"toolbar-action\" (click)=\"recovery($event)\">\r\n      <i class=\"icon anticon icon-reload1\" title=\"恢复\"></i>\r\n    </span>\r\n  </div>\r\n</div>\r\n\r\n<!-- <div class=\"imgview-content\" *ngIf=\"currentPage === 1\">\r\n  <img class=\"imgview-detail\" [ngStyle]=\"styleJsonStr\" [draggable]=\"true\" (dragstart)=\"dargStart($event)\"\r\n    (drag)=\"drag($event)\" (dragend)=\"dragEnd($event)\" #imgDetail [src]=\"imgSrc\" alt=\"图片\" width=\"100%\">\r\n</div> -->"
 
 /***/ }),
 
@@ -412,7 +412,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-10-17 09:45:06\r\n * @LastEditors: honghong\r\n * @LastEditTime: 2019-10-17 09:58:59\r\n * @Description: \r\n * @email: 3300536651@qq.com\r\n -->\r\n<div class=\"fc-verifycode\">\r\n  <input id=\"codeValid\" name=\"codeValid\" maxlength=\"4\" class=\"form-control\" required #codeValid=\"ngModel\" type=\"text\"\r\n    nz-input [(ngModel)]=\"fcCode\" (ngModelChange)=\"changeValue($event)\" [(fcVerifyCodeName)]=\"validVerifyCode\"\r\n    placeholder=\"请输入验证码\" />\r\n  <canvas id=\"verifyCode\" #verifyCode width=\"100\" height=\"28\" (click)=\"draw([]);\"></canvas>\r\n  <div class=\"fc-form-error\" *ngIf=\"codeValid.invalid && (codeValid.dirty || codeValid.touched)\">\r\n    <div>\r\n      <div *ngIf=\"codeValid.errors.required\">\r\n        验证码不能为空.\r\n      </div>\r\n      <div *ngIf=\"codeValid.errors.fcVerifyCodeName\">\r\n        验证码不正确.\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @Date: 2019-10-17 09:45:06\r\n * @LastEditors: kubrick\r\n * @LastEditTime: 2019-10-17 09:58:59\r\n * @Description: \r\n * @email:  \r\n -->\r\n<div class=\"fc-verifycode\">\r\n  <input id=\"codeValid\" name=\"codeValid\" maxlength=\"4\" class=\"form-control\" required #codeValid=\"ngModel\" type=\"text\"\r\n    nz-input [(ngModel)]=\"fcCode\" (ngModelChange)=\"changeValue($event)\" [(fcVerifyCodeName)]=\"validVerifyCode\"\r\n    placeholder=\"请输入验证码\" />\r\n  <canvas id=\"verifyCode\" #verifyCode width=\"100\" height=\"28\" (click)=\"draw([]);\"></canvas>\r\n  <div class=\"fc-form-error\" *ngIf=\"codeValid.invalid && (codeValid.dirty || codeValid.touched)\">\r\n    <div>\r\n      <div *ngIf=\"codeValid.errors.required\">\r\n        验证码不能为空.\r\n      </div>\r\n      <div *ngIf=\"codeValid.errors.fcVerifyCodeName\">\r\n        验证码不正确.\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -423,7 +423,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-10-17 09:45:06\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 忘记密码\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 09:55:38\r\n -->\r\n忘记密码"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 忘记密码\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 09:55:38\r\n -->\r\n忘记密码"
 
 /***/ }),
 
@@ -434,7 +434,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 登录\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-02-18 10:59:15\r\n * @LastEditTime: 2019-10-17 09:39:27\r\n -->\r\n<img src=\"#\" id=\"code\" alt=\"\">\r\n<button id=\"recognize\">识别</button>\r\n<div class=\"login-in\">\r\n  <div class=\"login-bg\">\r\n    <div class=\"login-content clearfix\">\r\n      <div class=\"login-left\">\r\n        <span class=\"project-name\"><img src=\"assets/image/logo.png\" height=\"90\" alt=\"logo\"></span>\r\n        <!-- <img class=\"map-img\" src=\"../../../assets/image/login_pic.png\"> -->\r\n        <!-- <img class=\"left-img\" src=\"../../../assets/image/login_left.png\"> -->\r\n      </div>\r\n      <div class=\"login-right\">\r\n        <div class=\"login-right-content\">\r\n          <h2 class=\"login-h2\">\r\n            欢迎登录\r\n          </h2>\r\n          <div class=\"sigin-error\">\r\n            <div class=\"sigin-error-in\" *ngIf=\"hasError\">\r\n              <i class=\"icon iconfont icon-error\"></i>\r\n              <span>{{msg}}</span>\r\n            </div>\r\n          </div>\r\n          <form>\r\n            <div class=\"user-box\">\r\n              <nz-input-group [nzSuffix]=\"userIdSuffix\" [nzPrefix]=\"userIdPrefix\">\r\n                <input id=\"userName\" name=\"userName\" required type=\"text\" class=\"form-control\" nz-input\r\n                  placeholder=\"请输入用户名admin\" [(ngModel)]=\"userId\" #userName=\"ngModel\" />\r\n              </nz-input-group>\r\n              <ng-template #userIdPrefix><i class=\"icon iconfont fc-icon-personnel\"></i></ng-template>\r\n              <ng-template #userIdSuffix><i nz-icon type=\"close-circle\" (click)=\"userId =''\" *ngIf=\"userId\"></i>\r\n              </ng-template>\r\n              <div class=\"fc-form-error\" *ngIf=\"userName.invalid && (userName.dirty || userName.touched)\">\r\n                <div *ngIf=\"userName.errors.required\">\r\n                  用户名不能为空.\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"user-box\">\r\n              <nz-input-group [nzSuffix]=\"pwdSuffix\" [nzPrefix]=\"pwdPrefix\">\r\n                <input id=\"passwordValid\" name=\"passwordValid\" class=\"form-control\" required type=\"password\"\r\n                  [(ngModel)]=\"password\" nz-input placeholder=\"请输入密码admin\" #passwordValid=\"ngModel\" />\r\n              </nz-input-group>\r\n              <ng-template #pwdPrefix><i class=\"icon iconfont fc-icon-password\"></i></ng-template>\r\n              <ng-template #pwdSuffix><i nz-icon type=\"close-circle\" (click)=\"password = ''\" *ngIf=\"password\"></i>\r\n              </ng-template>\r\n              <div class=\"fc-form-error\"\r\n                *ngIf=\"passwordValid.invalid && (passwordValid.dirty || passwordValid.touched)\">\r\n                <div *ngIf=\"passwordValid.errors.required\">\r\n                  密码不能为空.\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"user-box\">\r\n              <fc-verifycode #verifyCode></fc-verifycode>\r\n            </div>\r\n            <div class=\"user-box login-btn\">\r\n              <button nz-button nzType=\"primary\" (click)=\"login()\" [nzBlock]=\"true\">登录</button>\r\n            </div>\r\n            <div class=\"google-download\">\r\n              <p>本系统仅支持\r\n                <a href=\"../assets/browser/chromedev_x64-v71.0.3554.0.exe\">谷歌</a>和<a\r\n                  href=\"../assets/browser/360cse_9.5.0.138.exe\">360急速</a>浏览器</p>\r\n            </div>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 登录\r\n * @email:  \r\n * @Date: 2019-02-18 10:59:15\r\n * @LastEditTime: 2019-10-17 09:39:27\r\n -->\r\n<img src=\"#\" id=\"code\" alt=\"\">\r\n<button id=\"recognize\">识别</button>\r\n<div class=\"login-in\">\r\n  <div class=\"login-bg\">\r\n    <div class=\"login-content clearfix\">\r\n      <div class=\"login-left\">\r\n        <span class=\"project-name\"><img src=\"assets/image/logo.png\" height=\"90\" alt=\"logo\"></span>\r\n        <!-- <img class=\"map-img\" src=\"../../../assets/image/login_pic.png\"> -->\r\n        <!-- <img class=\"left-img\" src=\"../../../assets/image/login_left.png\"> -->\r\n      </div>\r\n      <div class=\"login-right\">\r\n        <div class=\"login-right-content\">\r\n          <h2 class=\"login-h2\">\r\n            欢迎登录\r\n          </h2>\r\n          <div class=\"sigin-error\">\r\n            <div class=\"sigin-error-in\" *ngIf=\"hasError\">\r\n              <i class=\"icon iconfont icon-error\"></i>\r\n              <span>{{msg}}</span>\r\n            </div>\r\n          </div>\r\n          <form>\r\n            <div class=\"user-box\">\r\n              <nz-input-group [nzSuffix]=\"userIdSuffix\" [nzPrefix]=\"userIdPrefix\">\r\n                <input id=\"userName\" name=\"userName\" required type=\"text\" class=\"form-control\" nz-input\r\n                  placeholder=\"请输入用户名admin\" [(ngModel)]=\"userId\" #userName=\"ngModel\" />\r\n              </nz-input-group>\r\n              <ng-template #userIdPrefix><i class=\"icon iconfont fc-icon-personnel\"></i></ng-template>\r\n              <ng-template #userIdSuffix><i nz-icon type=\"close-circle\" (click)=\"userId =''\" *ngIf=\"userId\"></i>\r\n              </ng-template>\r\n              <div class=\"fc-form-error\" *ngIf=\"userName.invalid && (userName.dirty || userName.touched)\">\r\n                <div *ngIf=\"userName.errors.required\">\r\n                  用户名不能为空.\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"user-box\">\r\n              <nz-input-group [nzSuffix]=\"pwdSuffix\" [nzPrefix]=\"pwdPrefix\">\r\n                <input id=\"passwordValid\" name=\"passwordValid\" class=\"form-control\" required type=\"password\"\r\n                  [(ngModel)]=\"password\" nz-input placeholder=\"请输入密码admin\" #passwordValid=\"ngModel\" />\r\n              </nz-input-group>\r\n              <ng-template #pwdPrefix><i class=\"icon iconfont fc-icon-password\"></i></ng-template>\r\n              <ng-template #pwdSuffix><i nz-icon type=\"close-circle\" (click)=\"password = ''\" *ngIf=\"password\"></i>\r\n              </ng-template>\r\n              <div class=\"fc-form-error\"\r\n                *ngIf=\"passwordValid.invalid && (passwordValid.dirty || passwordValid.touched)\">\r\n                <div *ngIf=\"passwordValid.errors.required\">\r\n                  密码不能为空.\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"user-box\">\r\n              <fc-verifycode #verifyCode></fc-verifycode>\r\n            </div>\r\n            <div class=\"user-box login-btn\">\r\n              <button nz-button nzType=\"primary\" (click)=\"login()\" [nzBlock]=\"true\">登录</button>\r\n            </div>\r\n            <div class=\"google-download\">\r\n              <p>本系统仅支持\r\n                <a href=\"../assets/browser/chromedev_x64-v71.0.3554.0.exe\">谷歌</a>和<a\r\n                  href=\"../assets/browser/360cse_9.5.0.138.exe\">360急速</a>浏览器</p>\r\n            </div>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -445,7 +445,7 @@ module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 注册\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 10:10:40\r\n -->\r\n注册\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 注册\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 10:10:40\r\n -->\r\n注册\r\n"
 
 /***/ }),
 
@@ -463,10 +463,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: app入口
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:44:05
  * @LastEditTime: 2019-04-17 10:16:54
  */
@@ -520,11 +520,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_feature_fc_fcsystem_components_syspassword_syssignup_syssignup_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! src/feature/fc/fcsystem/components/syspassword/syssignup/syssignup.component */ "./src/feature/fc/fcsystem/components/syspassword/syssignup/syssignup.component.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 根模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-15 10:45:27
  */
 
@@ -665,10 +665,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 错误
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:59:15
  * @LastEditTime: 2019-04-17 09:55:15
  */
@@ -714,12 +714,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm5/ng-zorro-antd.js");
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-07-04 17:15:57
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-15 10:55:06
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -863,11 +863,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dialog_syseditpassword_dialog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dialog/syseditpassword.dialog */ "./src/app/components/layout/dialog/syseditpassword.dialog.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 整体布局包括顶部工具栏、左侧菜单、侧边栏、选项卡导航主体内容区
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-16 17:59:22
  */
 
@@ -1209,12 +1209,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./layout.component */ "./src/app/components/layout/layout.component.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 
@@ -1266,10 +1266,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 锁屏
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:59:15
  * @LastEditTime: 2019-04-17 10:10:10
  */
@@ -1317,11 +1317,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mock_menus__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! _mock/_menus */ "./_mock/_menus.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: layout业务
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-07-24 11:09:21
  */
 
@@ -1457,10 +1457,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FcRouteReuseStrategy", function() { return FcRouteReuseStrategy; });
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 路由复用策略,跳转路由时，params的refresh='Y'时，刷新页面，refresh='N'时，不刷新页面，保留用户操作状态
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:59:15
  * @LastEditTime: 2019-07-05 12:15:00
  */
@@ -1616,11 +1616,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 单例服务，参考网址: https://angular.cn/guide/singleton-services
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-05-07 18:12:10
  */
 
@@ -1653,10 +1653,10 @@ var ShareService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 开发环境的环境配置
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-04-19 17:46:33
  */
@@ -1731,11 +1731,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: fccomponent平台组件模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-17 09:58:37
  */
 
@@ -1801,12 +1801,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _antv_g2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_antv_g2__WEBPACK_IMPORTED_MODULE_2__);
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:50:43
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-16 10:21:48
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -1873,12 +1873,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _antv_g2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_antv_g2__WEBPACK_IMPORTED_MODULE_2__);
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:52:47
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 17:22:43
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -1992,12 +1992,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _antv_g2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_antv_g2__WEBPACK_IMPORTED_MODULE_2__);
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:50:43
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 14:35:23
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -2077,12 +2077,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:52:01
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 15:16:37
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -2203,12 +2203,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _antv_g2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_antv_g2__WEBPACK_IMPORTED_MODULE_3__);
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:52:47
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 11:12:06
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -2312,7 +2312,7 @@ var Fcg2radarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/*\n * @Author: honghong\n * @LastEditors: honghong\n * @Description: 图片查看组件的样式\n * @email: 3300536651@qq.com\n * @Date: 2019-04-16 15:57:43\n * @LastEditTime: 2019-04-17 10:45:34\n */\n.imgview-wrap {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  padding-top: 40px;\n}\n.imgview-content {\n  position: relative;\n  overflow: auto;\n  overflow-y: auto;\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  background-color: #ffffff;\n  border: 2px solid #ddd;\n}\n.imgview-content .imgview-detail {\n  width: 100%;\n  height: auto;\n  position: absolute;\n  left: 0;\n  top: 0;\n  transition: -webkit-transform 0.3s;\n  transition: transform 0.3s;\n  transition: transform 0.3s, -webkit-transform 0.3s;\n  cursor: pointer;\n  max-width: none;\n}\n.imgview-wrap .imgview-toolbar {\n  width: 100%;\n  height: 50px;\n  background-color: #f6f6f6;\n  position: absolute;\n  left: 0;\n  top: 0;\n  padding: 5px;\n  text-align: right;\n}\n.imgview-wrap .toolbar-action {\n  margin-right: 5px;\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  display: inline-block;\n  padding: 0;\n  font-size: 18px;\n  border-radius: 50%;\n  color: #ffffff;\n  background-color: #1890ff;\n  border-color: #1890ff;\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);\n  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);\n  text-align: center;\n  outline: none;\n  cursor: pointer;\n}\n.imgview-wrap .toolbar-action:hover {\n  color: #fff;\n  background-color: #40a9ff;\n  border-color: #40a9ff;\n}\n.imgview-wrap .toolbar-action i {\n  font-size: 16px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyIsInNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L0Q6LzIwMTkvY29kZS9mYy1hbmd1bGFyL3NyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7OztFQU9FO0FDQ0Y7RUFDRSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QURDRjtBQ0VBO0VBQ0Usa0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0FEQUY7QUNHQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxPQUFBO0VBQ0EsTUFBQTtFQUlBLGtDQUFBO0VBQUEsMEJBQUE7RUFBQSxrREFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0FEREY7QUNJQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxNQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0FERkY7QUNLQTtFQUNFLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLHFCQUFBO0VBQ0EsVUFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGNBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0VBQ0EseUNBQUE7RUFDQSx3Q0FBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7QURIRjtBQ01BO0VBQ0UsV0FBQTtFQUNBLHlCQUFBO0VBQ0EscUJBQUE7QURKRjtBQ09BO0VBQ0UsZUFBQTtBRExGIiwiZmlsZSI6InNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBAQXV0aG9yOiBob25naG9uZ1xuICogQExhc3RFZGl0b3JzOiBob25naG9uZ1xuICogQERlc2NyaXB0aW9uOiDlm77niYfmn6XnnIvnu4Tku7bnmoTmoLflvI9cbiAqIEBlbWFpbDogMzMwMDUzNjY1MUBxcS5jb21cbiAqIEBEYXRlOiAyMDE5LTA0LTE2IDE1OjU3OjQzXG4gKiBATGFzdEVkaXRUaW1lOiAyMDE5LTA0LTE3IDEwOjQ1OjM0XG4gKi9cbi5pbWd2aWV3LXdyYXAge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHBhZGRpbmctdG9wOiA0MHB4O1xufVxuLmltZ3ZpZXctY29udGVudCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgb3ZlcmZsb3c6IGF1dG87XG4gIG92ZXJmbG93LXk6IGF1dG87XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNkZGQ7XG59XG4uaW1ndmlldy1jb250ZW50IC5pbWd2aWV3LWRldGFpbCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICAtd2Via2l0LXRyYW5zaXRpb246IC13ZWJraXQtdHJhbnNmb3JtIDAuM3M7XG4gIC1tb3otdHJhbnNpdGlvbjogLW1vei10cmFuc2Zvcm0gMC4zcztcbiAgLW8tdHJhbnNpdGlvbjogLW8tdHJhbnNmb3JtIDAuM3M7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjNzO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG1heC13aWR0aDogbm9uZTtcbn1cbi5pbWd2aWV3LXdyYXAgLmltZ3ZpZXctdG9vbGJhciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDUwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNmY2ZjY7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICBwYWRkaW5nOiA1cHg7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24ge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgd2lkdGg6IDQwcHg7XG4gIGhlaWdodDogNDBweDtcbiAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTg5MGZmO1xuICBib3JkZXItY29sb3I6ICMxODkwZmY7XG4gIHRleHQtc2hhZG93OiAwIC0xcHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuICBib3gtc2hhZG93OiAwIDJweCAwIHJnYmEoMCwgMCwgMCwgMC4wNDUpO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uOmhvdmVyIHtcbiAgY29sb3I6ICNmZmY7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0MGE5ZmY7XG4gIGJvcmRlci1jb2xvcjogIzQwYTlmZjtcbn1cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uIGkge1xuICBmb250LXNpemU6IDE2cHg7XG59XG4iLCIvKlxuICogQEF1dGhvcjogaG9uZ2hvbmdcbiAqIEBMYXN0RWRpdG9yczogaG9uZ2hvbmdcbiAqIEBEZXNjcmlwdGlvbjog5Zu+54mH5p+l55yL57uE5Lu255qE5qC35byPXG4gKiBAZW1haWw6IDMzMDA1MzY2NTFAcXEuY29tXG4gKiBARGF0ZTogMjAxOS0wNC0xNiAxNTo1Nzo0M1xuICogQExhc3RFZGl0VGltZTogMjAxOS0wNC0xNyAxMDo0NTozNFxuICovXG4uaW1ndmlldy13cmFwIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNDBweDtcbn1cblxuLmltZ3ZpZXctY29udGVudCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgb3ZlcmZsb3c6IGF1dG87XG4gIG92ZXJmbG93LXk6IGF1dG87XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNkZGQ7XG59XG5cbi5pbWd2aWV3LWNvbnRlbnQgLmltZ3ZpZXctZGV0YWlsIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIC13ZWJraXQtdHJhbnNpdGlvbjogLXdlYmtpdC10cmFuc2Zvcm0gMC4zcztcbiAgLW1vei10cmFuc2l0aW9uOiAtbW96LXRyYW5zZm9ybSAwLjNzO1xuICAtby10cmFuc2l0aW9uOiAtby10cmFuc2Zvcm0gMC4zcztcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuM3M7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgbWF4LXdpZHRoOiBub25lO1xufVxuXG4uaW1ndmlldy13cmFwIC5pbWd2aWV3LXRvb2xiYXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1MHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjZmNmY2O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgcGFkZGluZzogNXB4O1xuICB0ZXh0LWFsaWduOiByaWdodDtcbn1cblxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24ge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgd2lkdGg6IDQwcHg7XG4gIGhlaWdodDogNDBweDtcbiAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTg5MGZmO1xuICBib3JkZXItY29sb3I6ICMxODkwZmY7XG4gIHRleHQtc2hhZG93OiAwIC0xcHggMCByZ2JhKDAsIDAsIDAsIC4xMik7XG4gIGJveC1zaGFkb3c6IDAgMnB4IDAgcmdiYSgwLCAwLCAwLCAuMDQ1KTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBvdXRsaW5lOiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uOmhvdmVyIHtcbiAgY29sb3I6ICNmZmY7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0MGE5ZmY7XG4gIGJvcmRlci1jb2xvcjogIzQwYTlmZjtcbn1cblxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24gaSB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cbiJdfQ== */"
+module.exports = "/*\n * @Author: kubrick\n * @LastEditors: kubrick\n * @Description: 图片查看组件的样式\n * @email:  \n * @Date:  2021-03-21 15:57:43\n * @LastEditTime: 2019-04-17 10:45:34\n */\n.imgview-wrap {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  padding-top: 40px;\n}\n.imgview-content {\n  position: relative;\n  overflow: auto;\n  overflow-y: auto;\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  background-color: #ffffff;\n  border: 2px solid #ddd;\n}\n.imgview-content .imgview-detail {\n  width: 100%;\n  height: auto;\n  position: absolute;\n  left: 0;\n  top: 0;\n  transition: -webkit-transform 0.3s;\n  transition: transform 0.3s;\n  transition: transform 0.3s, -webkit-transform 0.3s;\n  cursor: pointer;\n  max-width: none;\n}\n.imgview-wrap .imgview-toolbar {\n  width: 100%;\n  height: 50px;\n  background-color: #f6f6f6;\n  position: absolute;\n  left: 0;\n  top: 0;\n  padding: 5px;\n  text-align: right;\n}\n.imgview-wrap .toolbar-action {\n  margin-right: 5px;\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  display: inline-block;\n  padding: 0;\n  font-size: 18px;\n  border-radius: 50%;\n  color: #ffffff;\n  background-color: #1890ff;\n  border-color: #1890ff;\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);\n  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);\n  text-align: center;\n  outline: none;\n  cursor: pointer;\n}\n.imgview-wrap .toolbar-action:hover {\n  color: #fff;\n  background-color: #40a9ff;\n  border-color: #40a9ff;\n}\n.imgview-wrap .toolbar-action i {\n  font-size: 16px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyIsInNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L0Q6LzIwMTkvY29kZS9mYy1hbmd1bGFyL3NyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7OztFQU9FO0FDQ0Y7RUFDRSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QURDRjtBQ0VBO0VBQ0Usa0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0FEQUY7QUNHQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxPQUFBO0VBQ0EsTUFBQTtFQUlBLGtDQUFBO0VBQUEsMEJBQUE7RUFBQSxrREFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0FEREY7QUNJQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxNQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0FERkY7QUNLQTtFQUNFLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLHFCQUFBO0VBQ0EsVUFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGNBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0VBQ0EseUNBQUE7RUFDQSx3Q0FBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7QURIRjtBQ01BO0VBQ0UsV0FBQTtFQUNBLHlCQUFBO0VBQ0EscUJBQUE7QURKRjtBQ09BO0VBQ0UsZUFBQTtBRExGIiwiZmlsZSI6InNyYy9mY2NvbXBvbmVudHMvZmNpbWd2aWV3L2ZjaW1ndmlldy5jb21wb25lbnQubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBAQXV0aG9yOiBob25naG9uZ1xuICogQExhc3RFZGl0b3JzOiBob25naG9uZ1xuICogQERlc2NyaXB0aW9uOiDlm77niYfmn6XnnIvnu4Tku7bnmoTmoLflvI9cbiAqIEBlbWFpbDogMzMwMDUzNjY1MUBxcS5jb21cbiAqIEBEYXRlOiAyMDE5LTA0LTE2IDE1OjU3OjQzXG4gKiBATGFzdEVkaXRUaW1lOiAyMDE5LTA0LTE3IDEwOjQ1OjM0XG4gKi9cbi5pbWd2aWV3LXdyYXAge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHBhZGRpbmctdG9wOiA0MHB4O1xufVxuLmltZ3ZpZXctY29udGVudCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgb3ZlcmZsb3c6IGF1dG87XG4gIG92ZXJmbG93LXk6IGF1dG87XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNkZGQ7XG59XG4uaW1ndmlldy1jb250ZW50IC5pbWd2aWV3LWRldGFpbCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICAtd2Via2l0LXRyYW5zaXRpb246IC13ZWJraXQtdHJhbnNmb3JtIDAuM3M7XG4gIC1tb3otdHJhbnNpdGlvbjogLW1vei10cmFuc2Zvcm0gMC4zcztcbiAgLW8tdHJhbnNpdGlvbjogLW8tdHJhbnNmb3JtIDAuM3M7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjNzO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG1heC13aWR0aDogbm9uZTtcbn1cbi5pbWd2aWV3LXdyYXAgLmltZ3ZpZXctdG9vbGJhciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDUwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNmY2ZjY7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICBwYWRkaW5nOiA1cHg7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24ge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgd2lkdGg6IDQwcHg7XG4gIGhlaWdodDogNDBweDtcbiAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTg5MGZmO1xuICBib3JkZXItY29sb3I6ICMxODkwZmY7XG4gIHRleHQtc2hhZG93OiAwIC0xcHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuICBib3gtc2hhZG93OiAwIDJweCAwIHJnYmEoMCwgMCwgMCwgMC4wNDUpO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uOmhvdmVyIHtcbiAgY29sb3I6ICNmZmY7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0MGE5ZmY7XG4gIGJvcmRlci1jb2xvcjogIzQwYTlmZjtcbn1cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uIGkge1xuICBmb250LXNpemU6IDE2cHg7XG59XG4iLCIvKlxuICogQEF1dGhvcjogaG9uZ2hvbmdcbiAqIEBMYXN0RWRpdG9yczogaG9uZ2hvbmdcbiAqIEBEZXNjcmlwdGlvbjog5Zu+54mH5p+l55yL57uE5Lu255qE5qC35byPXG4gKiBAZW1haWw6IDMzMDA1MzY2NTFAcXEuY29tXG4gKiBARGF0ZTogMjAxOS0wNC0xNiAxNTo1Nzo0M1xuICogQExhc3RFZGl0VGltZTogMjAxOS0wNC0xNyAxMDo0NTozNFxuICovXG4uaW1ndmlldy13cmFwIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLXRvcDogNDBweDtcbn1cblxuLmltZ3ZpZXctY29udGVudCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgb3ZlcmZsb3c6IGF1dG87XG4gIG92ZXJmbG93LXk6IGF1dG87XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNkZGQ7XG59XG5cbi5pbWd2aWV3LWNvbnRlbnQgLmltZ3ZpZXctZGV0YWlsIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIC13ZWJraXQtdHJhbnNpdGlvbjogLXdlYmtpdC10cmFuc2Zvcm0gMC4zcztcbiAgLW1vei10cmFuc2l0aW9uOiAtbW96LXRyYW5zZm9ybSAwLjNzO1xuICAtby10cmFuc2l0aW9uOiAtby10cmFuc2Zvcm0gMC4zcztcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuM3M7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgbWF4LXdpZHRoOiBub25lO1xufVxuXG4uaW1ndmlldy13cmFwIC5pbWd2aWV3LXRvb2xiYXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1MHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjZmNmY2O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgcGFkZGluZzogNXB4O1xuICB0ZXh0LWFsaWduOiByaWdodDtcbn1cblxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24ge1xuICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgd2lkdGg6IDQwcHg7XG4gIGhlaWdodDogNDBweDtcbiAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiAjZmZmZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTg5MGZmO1xuICBib3JkZXItY29sb3I6ICMxODkwZmY7XG4gIHRleHQtc2hhZG93OiAwIC0xcHggMCByZ2JhKDAsIDAsIDAsIC4xMik7XG4gIGJveC1zaGFkb3c6IDAgMnB4IDAgcmdiYSgwLCAwLCAwLCAuMDQ1KTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBvdXRsaW5lOiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5pbWd2aWV3LXdyYXAgLnRvb2xiYXItYWN0aW9uOmhvdmVyIHtcbiAgY29sb3I6ICNmZmY7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0MGE5ZmY7XG4gIGJvcmRlci1jb2xvcjogIzQwYTlmZjtcbn1cblxuLmltZ3ZpZXctd3JhcCAudG9vbGJhci1hY3Rpb24gaSB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -2331,11 +2331,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 图片查看
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-06-19 16:30:58
  */
 
@@ -2530,12 +2530,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-17 09:43:45
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-18 14:10:50
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 var Fcverifycode = /** @class */ (function () {
     function Fcverifycode() {
@@ -2665,11 +2665,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Fcg2pieComponent", function() { return _fcg2pie_fcg2pie_component__WEBPACK_IMPORTED_MODULE_6__["Fcg2pieComponent"]; });
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 导出fccomponent模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-14 15:10:13
  */
 
@@ -2709,11 +2709,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _service_message_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./service/message.service */ "./src/fccore/service/message.service.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 平台核心模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 14:49:10
  */
 
@@ -2769,11 +2769,11 @@ var FccoreModule = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CacheService", function() { return CacheService; });
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 缓存服务
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 11:41:24
  */
 var CacheService = /** @class */ (function () {
@@ -2859,11 +2859,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 公共方法
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 11:42:53
  */
 
@@ -2926,11 +2926,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common.service */ "./src/fccore/service/common.service.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 前后端通道
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 11:43:25
  */
 
@@ -2977,11 +2977,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 打印服务,上线环境自动关闭打印
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 11:43:44
  */
 
@@ -3035,11 +3035,11 @@ var LogService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageService", function() { return MessageService; });
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description:消息服务
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-16 17:42:39
  */
 var MessageService = /** @class */ (function () {
@@ -3067,11 +3067,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 用户服务、路由守卫
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-04-17 11:44:14
  */
 
@@ -3128,10 +3128,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 忘记密码
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:59:15
  * @LastEditTime: 2019-04-17 09:55:51
  */
@@ -3179,11 +3179,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_fccore_service_cache_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/fccore/service/cache.service */ "./src/fccore/service/cache.service.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 登录
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-11 15:28:50
  */
 
@@ -3264,7 +3264,7 @@ var SyssigninComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/*\n * @Author: honghong\n * @LastEditors: honghong\n * @Description: 登录页面的样式\n * @email: 3300536651@qq.com\n * @Date: 2019-04-01 14:01:49\n * @LastEditTime: 2019-07-05 12:47:47\n */\n.login-in {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.login-bg {\n  width: 100%;\n  height: 100%;\n  background: url('login_bg.jpg') no-repeat fixed top;\n  background-size: 100% 100%;\n  position: fixed;\n}\n.login-bg .login-content {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-left: -348px;\n  margin-top: -210px;\n  min-height: 400px;\n  height: 400px;\n  box-shadow: 0 1px 5px 0px rgba(50, 50, 50, 0.2);\n  background: #fff;\n}\n.login-bg .login-content .login-left {\n  float: left;\n  width: 390px;\n  height: 100%;\n  background: #4E8AEC;\n  position: relative;\n}\n.login-bg .login-content .login-left .map-img {\n  width: 336px;\n  height: 300px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -168px;\n  margin-top: -150px;\n}\n.login-bg .login-content .login-left .left-img {\n  width: 365px;\n  height: 156px;\n  position: absolute;\n  left: 50%;\n  margin-left: -182px;\n  top: 130px;\n}\n.login-bg .login-content .login-right {\n  float: right;\n  width: 296px;\n  height: 100%;\n  background: #fff;\n  position: relative;\n}\n.login-bg .login-content .login-right .login-right-content {\n  width: 80%;\n  position: absolute;\n  left: 30px;\n  top: 60px;\n}\n.login-bg .login-content .login-right .login-h2 {\n  width: 100%;\n  font-size: 16px;\n  color: #323232;\n  text-align: center;\n  margin-bottom: 20px;\n  font-weight: 400;\n}\n.login-bg .login-content .login-right .login-date {\n  margin-bottom: 5px !important;\n}\n.login-bg .login-content .login-right .user-box {\n  width: 100%;\n  height: 30px;\n  border-radius: 3px;\n  margin-bottom: 20px;\n}\n.login-bg .login-content .login-right .user-box .user-input {\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  line-height: 30px;\n  outline: none;\n  border: 1px solid #aaa;\n  border-radius: 4px;\n  color: #666;\n  font-size: 12px;\n}\n.login-bg .login-content .login-right .user-box input::-webkit-input-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::-moz-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::-ms-input-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-webkit-input-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-moz-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-ms-input-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box .user-input:hover {\n  color: #666;\n  background-color: #ffffff;\n  border-color: #666;\n}\n.login-bg .login-content .login-right .user-box .user-input:focus {\n  color: #666;\n  border-color: #666 !important;\n  background-color: #fff;\n}\n.login-bg .login-content .login-right .save-word {\n  width: 100%;\n  text-align: center;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-inner-container {\n  width: 14px;\n  height: 14px;\n  border-color: #929292;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-layout .mat-checkbox-label {\n  font-size: 12px;\n  color: #666;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-frame {\n  border-width: 1px;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-checked.mat-accent .mat-checkbox-background {\n  background: #3f77e4;\n}\n.login-bg .login-content .login-right .login-button {\n  display: block;\n  width: 100%;\n  height: 30px;\n  outline: none;\n  border: none;\n  background: #3f77e4;\n  font-size: 12px;\n  color: #fff;\n  border-radius: 4px;\n  cursor: pointer;\n}\n.login-bg .login-content .login-right .login-button:hover {\n  background: #3f77e4;\n}\n.login-bg .login-content .login-right .login-btn {\n  margin-top: 7px;\n}\n.login-bg .login-content .login-right .google-download {\n  width: 100%;\n}\n.login-bg .login-content .login-right .google-download p {\n  font-size: 12px;\n  text-align: center;\n  color: #666;\n}\n.login-bg .login-content .login-right .google-download a {\n  font-size: 12px;\n  color: #ff7573;\n  cursor: pointer;\n}\n.login-bg .user-input.ng-invalid {\n  border: 1px solid #ff7573 !important;\n}\n.login-bg .user-input.ng-valid {\n  border: 1px solid #aaa !important;\n}\n.login-bg .user-box {\n  position: relative;\n}\n.login-bg .required-color {\n  width: 100%;\n  height: 20px;\n  position: absolute;\n  left: 0;\n  top: 30px;\n  font-size: 12px;\n  text-align: center;\n  color: #ff7573;\n  z-index: 9;\n  border-radius: 2px;\n}\n.login-bg .required-color p {\n  height: 20px;\n  line-height: 20px;\n}\n/* 块级按钮文字不浮动 */\n:host ::ng-deep .login-btn .fc-button-block > span {\n  float: none;\n}\n.sigin-body .sigin-error {\n  width: 100%;\n  margin-bottom: 30px;\n  line-height: 24px;\n  box-sizing: border-box;\n  font-size: 14px;\n  margin-top: 20px;\n}\n.sigin-error-in {\n  background: #FEEEEB;\n  border: 1px solid #F15532;\n  color: #F15533;\n  text-align: left;\n  padding: 3px 6px;\n  margin-bottom: 20px;\n}\n.project-name {\n  font-size: 30px;\n  color: #fff;\n  display: block;\n  text-align: center;\n  position: absolute;\n  left: 0;\n  width: 100%;\n  top: 40%;\n}\n.fc-form-error {\n  font-size: 12px;\n  color: #f5222d;\n}\n.fc-form-error .ant-input {\n  background-color: #fff;\n  border-color: #f5222d;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9mZWF0dXJlL2ZjL2Zjc3lzdGVtL2NvbXBvbmVudHMvc3lzcGFzc3dvcmQvc3lzc2lnbmluL3N5c3NpZ25pbi5sZXNzIiwic3JjL2ZlYXR1cmUvZmMvZmNzeXN0ZW0vY29tcG9uZW50cy9zeXNwYXNzd29yZC9zeXNzaWduaW4vRDovMjAxOS9jb2RlL2ZjLWFuZ3VsYXIvc3JjL2ZlYXR1cmUvZmMvZmNzeXN0ZW0vY29tcG9uZW50cy9zeXNwYXNzd29yZC9zeXNzaWduaW4vc3lzc2lnbmluLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7RUFPRTtBQ0NGO0VBQ0UsZUFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QURDRjtBQ0VBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxvREFBQTtFQUNBLDBCQUFBO0VBQ0EsZUFBQTtBREFGO0FDR0E7RUFDRSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsYUFBQTtFQUNBLCtDQUFBO0VBQ0EsZ0JBQUE7QURERjtBQ0tBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBREhGO0FDTUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FESkY7QUNPQTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxVQUFBO0FETEY7QUNRQTtFQUNFLFlBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QURORjtBQ1NBO0VBQ0UsVUFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QURQRjtBQ1VBO0VBQ0UsV0FBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FEUkY7QUNXQTtFQUNFLDZCQUFBO0FEVEY7QUNZQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtBRFZGO0FDYUE7RUFDRSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0FEWEY7QUNjQTtFQUNFLHlCQUFBO0VBQ0EsMEJBQUE7QURaRjtBQ1VBO0VBQ0UseUJBQUE7RUFDQSwwQkFBQTtBRFpGO0FDVUE7RUFDRSx5QkFBQTtFQUNBLDBCQUFBO0FEWkY7QUNVQTtFQUNFLHlCQUFBO0VBQ0EsMEJBQUE7QURaRjtBQ2VBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ2dCQTtFQUNFLFdBQUE7RUFDQSx5QkFBQTtFQUNBLGtCQUFBO0FEZEY7QUNpQkE7RUFDRSxXQUFBO0VBQ0EsNkJBQUE7RUFDQSxzQkFBQTtBRGZGO0FDa0JBO0VBQ0UsV0FBQTtFQUNBLGtCQUFBO0FEaEJGO0FDbUJBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBRGpCRjtBQ29CQTtFQUNFLGVBQUE7RUFDQSxXQUFBO0FEbEJGO0FDcUJBO0VBQ0UsaUJBQUE7QURuQkY7QUNzQkE7RUFDRSxtQkFBQTtBRHBCRjtBQ3VCQTtFQUNFLGNBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtBRHJCRjtBQ3dCQTtFQUNFLG1CQUFBO0FEdEJGO0FDeUJBO0VBQ0UsZUFBQTtBRHZCRjtBQzBCQTtFQUNFLFdBQUE7QUR4QkY7QUMyQkE7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0FEekJGO0FDNEJBO0VBQ0UsZUFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FEMUJGO0FDNkJBO0VBQ0Usb0NBQUE7QUQzQkY7QUM4QkE7RUFDRSxpQ0FBQTtBRDVCRjtBQytCQTtFQUNFLGtCQUFBO0FEN0JGO0FDZ0NBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtBRDlCRjtBQ2lDQTtFQUNFLFlBQUE7RUFDQSxpQkFBQTtBRC9CRjtBQUNBLGNBQWM7QUNvQ2Q7RUFDRSxXQUFBO0FEbENGO0FDcUNBO0VBQ0UsV0FBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBRG5DRjtBQ3NDQTtFQUNFLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FEcENGO0FDdUNBO0VBQ0UsZUFBQTtFQUNBLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxXQUFBO0VBQ0EsUUFBQTtBRHJDRjtBQ3dDQTtFQUNFLGVBQUE7RUFDQSxjQUFBO0FEdENGO0FDd0NFO0VBQ0Usc0JBQUE7RUFDQSxxQkFBQTtBRHRDSiIsImZpbGUiOiJzcmMvZmVhdHVyZS9mYy9mY3N5c3RlbS9jb21wb25lbnRzL3N5c3Bhc3N3b3JkL3N5c3NpZ25pbi9zeXNzaWduaW4ubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBAQXV0aG9yOiBob25naG9uZ1xuICogQExhc3RFZGl0b3JzOiBob25naG9uZ1xuICogQERlc2NyaXB0aW9uOiDnmbvlvZXpobXpnaLnmoTmoLflvI9cbiAqIEBlbWFpbDogMzMwMDUzNjY1MUBxcS5jb21cbiAqIEBEYXRlOiAyMDE5LTA0LTAxIDE0OjAxOjQ5XG4gKiBATGFzdEVkaXRUaW1lOiAyMDE5LTA3LTA1IDEyOjQ3OjQ3XG4gKi9cbi5sb2dpbi1pbiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuLmxvZ2luLWJnIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi8uLi8uLi9hc3NldHMvaW1hZ2UvbG9naW5fYmcuanBlZycpIG5vLXJlcGVhdCBmaXhlZCB0b3A7XG4gIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMzQ4cHg7XG4gIG1hcmdpbi10b3A6IC0yMTBweDtcbiAgbWluLWhlaWdodDogNDAwcHg7XG4gIGhlaWdodDogNDAwcHg7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDVweCAwcHggcmdiYSg1MCwgNTAsIDUwLCAwLjIpO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1sZWZ0IHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHdpZHRoOiAzOTBweDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kOiAjNEU4QUVDO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLm1hcC1pbWcge1xuICB3aWR0aDogMzM2cHg7XG4gIGhlaWdodDogMzAwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTAlO1xuICB0b3A6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xNjhweDtcbiAgbWFyZ2luLXRvcDogLTE1MHB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1sZWZ0IC5sZWZ0LWltZyB7XG4gIHdpZHRoOiAzNjVweDtcbiAgaGVpZ2h0OiAxNTZweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMTgycHg7XG4gIHRvcDogMTMwcHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IHtcbiAgZmxvYXQ6IHJpZ2h0O1xuICB3aWR0aDogMjk2cHg7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tcmlnaHQtY29udGVudCB7XG4gIHdpZHRoOiA4MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMzBweDtcbiAgdG9wOiA2MHB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4taDIge1xuICB3aWR0aDogMTAwJTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBjb2xvcjogIzMyMzIzMjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICBmb250LXdlaWdodDogNDAwO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tZGF0ZSB7XG4gIG1hcmdpbi1ib3R0b206IDVweCAhaW1wb3J0YW50O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3gge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAzMHB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWE7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgY29sb3I6ICM2NjY7XG4gIGZvbnQtc2l6ZTogMTJweDtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IGlucHV0OjpwbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjY2NjY2NjICFpbXBvcnRhbnQ7XG4gIGZvbnQtc2l6ZTogMTJweCAhaW1wb3J0YW50O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggaW5wdXQ6Zm9jdXM6OnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dDpob3ZlciB7XG4gIGNvbG9yOiAjNjY2O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICBib3JkZXItY29sb3I6ICM2NjY7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dDpmb2N1cyB7XG4gIGNvbG9yOiAjNjY2O1xuICBib3JkZXItY29sb3I6ICM2NjYgIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1pbm5lci1jb250YWluZXIge1xuICB3aWR0aDogMTRweDtcbiAgaGVpZ2h0OiAxNHB4O1xuICBib3JkZXItY29sb3I6ICM5MjkyOTI7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1sYXlvdXQgLm1hdC1jaGVja2JveC1sYWJlbCB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICM2NjY7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1mcmFtZSB7XG4gIGJvcmRlci13aWR0aDogMXB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuc2F2ZS13b3JkIC5tYXQtY2hlY2tib3gtY2hlY2tlZC5tYXQtYWNjZW50IC5tYXQtY2hlY2tib3gtYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1idXR0b24ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMzBweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYm9yZGVyOiBub25lO1xuICBiYWNrZ3JvdW5kOiAjM2Y3N2U0O1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjZmZmO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1idG4ge1xuICBtYXJnaW4tdG9wOiA3cHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5nb29nbGUtZG93bmxvYWQge1xuICB3aWR0aDogMTAwJTtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmdvb2dsZS1kb3dubG9hZCBwIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjNjY2O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuZ29vZ2xlLWRvd25sb2FkIGEge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjZmY3NTczO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG9naW4tYmcgLnVzZXItaW5wdXQubmctaW52YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNmZjc1NzMgIWltcG9ydGFudDtcbn1cbi5sb2dpbi1iZyAudXNlci1pbnB1dC5uZy12YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWEgIWltcG9ydGFudDtcbn1cbi5sb2dpbi1iZyAudXNlci1ib3gge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ubG9naW4tYmcgLnJlcXVpcmVkLWNvbG9yIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjBweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB0b3A6IDMwcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogI2ZmNzU3MztcbiAgei1pbmRleDogOTtcbiAgYm9yZGVyLXJhZGl1czogMnB4O1xufVxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciBwIHtcbiAgaGVpZ2h0OiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjBweDtcbn1cbi8qIOWdl+e6p+aMiemSruaWh+Wtl+S4jea1ruWKqCAqL1xuOmhvc3QgOjpuZy1kZWVwIC5sb2dpbi1idG4gLmZjLWJ1dHRvbi1ibG9jayA+IHNwYW4ge1xuICBmbG9hdDogbm9uZTtcbn1cbi5zaWdpbi1ib2R5IC5zaWdpbi1lcnJvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICBsaW5lLWhlaWdodDogMjRweDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuLnNpZ2luLWVycm9yLWluIHtcbiAgYmFja2dyb3VuZDogI0ZFRUVFQjtcbiAgYm9yZGVyOiAxcHggc29saWQgI0YxNTUzMjtcbiAgY29sb3I6ICNGMTU1MzM7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIHBhZGRpbmc6IDNweCA2cHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG4ucHJvamVjdC1uYW1lIHtcbiAgZm9udC1zaXplOiAzMHB4O1xuICBjb2xvcjogI2ZmZjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgdG9wOiA0MCU7XG59XG4uZmMtZm9ybS1lcnJvciB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmNTIyMmQ7XG59XG4uZmMtZm9ybS1lcnJvciAuYW50LWlucHV0IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgYm9yZGVyLWNvbG9yOiAjZjUyMjJkO1xufVxuIiwiLypcbiAqIEBBdXRob3I6IGhvbmdob25nXG4gKiBATGFzdEVkaXRvcnM6IGhvbmdob25nXG4gKiBARGVzY3JpcHRpb246IOeZu+W9lemhtemdoueahOagt+W8j1xuICogQGVtYWlsOiAzMzAwNTM2NjUxQHFxLmNvbVxuICogQERhdGU6IDIwMTktMDQtMDEgMTQ6MDE6NDlcbiAqIEBMYXN0RWRpdFRpbWU6IDIwMTktMDctMDUgMTI6NDc6NDdcbiAqL1xuLmxvZ2luLWluIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5sb2dpbi1iZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vLi4vLi4vYXNzZXRzL2ltYWdlL2xvZ2luX2JnLmpwZWcnKSBuby1yZXBlYXQgZml4ZWQgdG9wO1xuICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcbiAgcG9zaXRpb246IGZpeGVkO1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMzQ4cHg7XG4gIG1hcmdpbi10b3A6IC0yMTBweDtcbiAgbWluLWhlaWdodDogNDAwcHg7XG4gIGhlaWdodDogNDAwcHg7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDVweCAwcHggcmdiYSg1MCwgNTAsIDUwLCAwLjIpO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICA7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tbGVmdCB7XG4gIGZsb2F0OiBsZWZ0O1xuICB3aWR0aDogMzkwcHg7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogIzRFOEFFQztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLm1hcC1pbWcge1xuICB3aWR0aDogMzM2cHg7XG4gIGhlaWdodDogMzAwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTAlO1xuICB0b3A6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xNjhweDtcbiAgbWFyZ2luLXRvcDogLTE1MHB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLmxlZnQtaW1nIHtcbiAgd2lkdGg6IDM2NXB4O1xuICBoZWlnaHQ6IDE1NnB4O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xODJweDtcbiAgdG9wOiAxMzBweDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbiAgd2lkdGg6IDI5NnB4O1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tcmlnaHQtY29udGVudCB7XG4gIHdpZHRoOiA4MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMzBweDtcbiAgdG9wOiA2MHB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1oMiB7XG4gIHdpZHRoOiAxMDAlO1xuICBmb250LXNpemU6IDE2cHg7XG4gIGNvbG9yOiAjMzIzMjMyO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWRhdGUge1xuICBtYXJnaW4tYm90dG9tOiA1cHggIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3gge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAzMHB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IC51c2VyLWlucHV0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBsaW5lLWhlaWdodDogMzBweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYm9yZGVyOiAxcHggc29saWQgI2FhYTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjb2xvcjogIzY2NjtcbiAgZm9udC1zaXplOiAxMnB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCBpbnB1dDo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogI2NjY2NjYyAhaW1wb3J0YW50O1xuICBmb250LXNpemU6IDEycHggIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggaW5wdXQ6Zm9jdXM6OnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IC51c2VyLWlucHV0OmhvdmVyIHtcbiAgY29sb3I6ICM2NjY7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlci1jb2xvcjogIzY2Njtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggLnVzZXItaW5wdXQ6Zm9jdXMge1xuICBjb2xvcjogIzY2NjtcbiAgYm9yZGVyLWNvbG9yOiAjNjY2ICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCAubWF0LWNoZWNrYm94LWlubmVyLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxNHB4O1xuICBoZWlnaHQ6IDE0cHg7XG4gIGJvcmRlci1jb2xvcjogIzkyOTI5Mjtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuc2F2ZS13b3JkIC5tYXQtY2hlY2tib3gtbGF5b3V0IC5tYXQtY2hlY2tib3gtbGFiZWwge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1mcmFtZSB7XG4gIGJvcmRlci13aWR0aDogMXB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1jaGVja2VkLm1hdC1hY2NlbnQgLm1hdC1jaGVja2JveC1iYWNrZ3JvdW5kIHtcbiAgYmFja2dyb3VuZDogIzNmNzdlNDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tYnV0dG9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDMwcHg7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlcjogbm9uZTtcbiAgYmFja2dyb3VuZDogIzNmNzdlNDtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ0biB7XG4gIG1hcmdpbi10b3A6IDdweDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuZ29vZ2xlLWRvd25sb2FkIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmdvb2dsZS1kb3dubG9hZCBwIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5nb29nbGUtZG93bmxvYWQgYSB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmZjc1NzM7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLmxvZ2luLWJnIC51c2VyLWlucHV0Lm5nLWludmFsaWQge1xuICBib3JkZXI6IDFweCBzb2xpZCAjZmY3NTczICFpbXBvcnRhbnQ7XG59XG5cbi5sb2dpbi1iZyAudXNlci1pbnB1dC5uZy12YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWEgIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC51c2VyLWJveCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDIwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAzMHB4O1xuICBmb250LXNpemU6IDEycHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICNmZjc1NzM7XG4gIHotaW5kZXg6IDk7XG4gIGJvcmRlci1yYWRpdXM6IDJweDtcbn1cblxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciBwIHtcbiAgaGVpZ2h0OiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjBweDtcbn1cblxuXG4vKiDlnZfnuqfmjInpkq7mloflrZfkuI3mta7liqggKi9cblxuOmhvc3QgOjpuZy1kZWVwIC5sb2dpbi1idG4gLmZjLWJ1dHRvbi1ibG9jaz5zcGFuIHtcbiAgZmxvYXQ6IG5vbmU7XG59XG5cbi5zaWdpbi1ib2R5IC5zaWdpbi1lcnJvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICBsaW5lLWhlaWdodDogMjRweDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4uc2lnaW4tZXJyb3ItaW4ge1xuICBiYWNrZ3JvdW5kOiAjRkVFRUVCO1xuICBib3JkZXI6IDFweCBzb2xpZCAjRjE1NTMyO1xuICBjb2xvcjogI0YxNTUzMztcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgcGFkZGluZzogM3B4IDZweDtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLnByb2plY3QtbmFtZSB7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgY29sb3I6ICNmZmY7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIHRvcDogNDAlO1xufVxuXG4uZmMtZm9ybS1lcnJvciB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmNTIyMmQ7XG5cbiAgJiAuYW50LWlucHV0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1jb2xvcjogI2Y1MjIyZDtcbiAgfVxufVxuIl19 */"
+module.exports = "/*\n * @Author: kubrick\n * @LastEditors: kubrick\n * @Description: 登录页面的样式\n * @email:  \n * @Date: 2019-04-01 14:01:49\n * @LastEditTime: 2019-07-05 12:47:47\n */\n.login-in {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.login-bg {\n  width: 100%;\n  height: 100%;\n  background: url('login_bg.jpg') no-repeat fixed top;\n  background-size: 100% 100%;\n  position: fixed;\n}\n.login-bg .login-content {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-left: -348px;\n  margin-top: -210px;\n  min-height: 400px;\n  height: 400px;\n  box-shadow: 0 1px 5px 0px rgba(50, 50, 50, 0.2);\n  background: #fff;\n}\n.login-bg .login-content .login-left {\n  float: left;\n  width: 390px;\n  height: 100%;\n  background: #4E8AEC;\n  position: relative;\n}\n.login-bg .login-content .login-left .map-img {\n  width: 336px;\n  height: 300px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -168px;\n  margin-top: -150px;\n}\n.login-bg .login-content .login-left .left-img {\n  width: 365px;\n  height: 156px;\n  position: absolute;\n  left: 50%;\n  margin-left: -182px;\n  top: 130px;\n}\n.login-bg .login-content .login-right {\n  float: right;\n  width: 296px;\n  height: 100%;\n  background: #fff;\n  position: relative;\n}\n.login-bg .login-content .login-right .login-right-content {\n  width: 80%;\n  position: absolute;\n  left: 30px;\n  top: 60px;\n}\n.login-bg .login-content .login-right .login-h2 {\n  width: 100%;\n  font-size: 16px;\n  color: #323232;\n  text-align: center;\n  margin-bottom: 20px;\n  font-weight: 400;\n}\n.login-bg .login-content .login-right .login-date {\n  margin-bottom: 5px !important;\n}\n.login-bg .login-content .login-right .user-box {\n  width: 100%;\n  height: 30px;\n  border-radius: 3px;\n  margin-bottom: 20px;\n}\n.login-bg .login-content .login-right .user-box .user-input {\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  line-height: 30px;\n  outline: none;\n  border: 1px solid #aaa;\n  border-radius: 4px;\n  color: #666;\n  font-size: 12px;\n}\n.login-bg .login-content .login-right .user-box input::-webkit-input-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::-moz-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::-ms-input-placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input::placeholder {\n  color: #cccccc !important;\n  font-size: 12px !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-webkit-input-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-moz-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::-ms-input-placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box input:focus::placeholder {\n  color: transparent !important;\n}\n.login-bg .login-content .login-right .user-box .user-input:hover {\n  color: #666;\n  background-color: #ffffff;\n  border-color: #666;\n}\n.login-bg .login-content .login-right .user-box .user-input:focus {\n  color: #666;\n  border-color: #666 !important;\n  background-color: #fff;\n}\n.login-bg .login-content .login-right .save-word {\n  width: 100%;\n  text-align: center;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-inner-container {\n  width: 14px;\n  height: 14px;\n  border-color: #929292;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-layout .mat-checkbox-label {\n  font-size: 12px;\n  color: #666;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-frame {\n  border-width: 1px;\n}\n.login-bg .login-content .login-right .save-word .mat-checkbox-checked.mat-accent .mat-checkbox-background {\n  background: #3f77e4;\n}\n.login-bg .login-content .login-right .login-button {\n  display: block;\n  width: 100%;\n  height: 30px;\n  outline: none;\n  border: none;\n  background: #3f77e4;\n  font-size: 12px;\n  color: #fff;\n  border-radius: 4px;\n  cursor: pointer;\n}\n.login-bg .login-content .login-right .login-button:hover {\n  background: #3f77e4;\n}\n.login-bg .login-content .login-right .login-btn {\n  margin-top: 7px;\n}\n.login-bg .login-content .login-right .google-download {\n  width: 100%;\n}\n.login-bg .login-content .login-right .google-download p {\n  font-size: 12px;\n  text-align: center;\n  color: #666;\n}\n.login-bg .login-content .login-right .google-download a {\n  font-size: 12px;\n  color: #ff7573;\n  cursor: pointer;\n}\n.login-bg .user-input.ng-invalid {\n  border: 1px solid #ff7573 !important;\n}\n.login-bg .user-input.ng-valid {\n  border: 1px solid #aaa !important;\n}\n.login-bg .user-box {\n  position: relative;\n}\n.login-bg .required-color {\n  width: 100%;\n  height: 20px;\n  position: absolute;\n  left: 0;\n  top: 30px;\n  font-size: 12px;\n  text-align: center;\n  color: #ff7573;\n  z-index: 9;\n  border-radius: 2px;\n}\n.login-bg .required-color p {\n  height: 20px;\n  line-height: 20px;\n}\n/* 块级按钮文字不浮动 */\n:host ::ng-deep .login-btn .fc-button-block > span {\n  float: none;\n}\n.sigin-body .sigin-error {\n  width: 100%;\n  margin-bottom: 30px;\n  line-height: 24px;\n  box-sizing: border-box;\n  font-size: 14px;\n  margin-top: 20px;\n}\n.sigin-error-in {\n  background: #FEEEEB;\n  border: 1px solid #F15532;\n  color: #F15533;\n  text-align: left;\n  padding: 3px 6px;\n  margin-bottom: 20px;\n}\n.project-name {\n  font-size: 30px;\n  color: #fff;\n  display: block;\n  text-align: center;\n  position: absolute;\n  left: 0;\n  width: 100%;\n  top: 40%;\n}\n.fc-form-error {\n  font-size: 12px;\n  color: #f5222d;\n}\n.fc-form-error .ant-input {\n  background-color: #fff;\n  border-color: #f5222d;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9mZWF0dXJlL2ZjL2Zjc3lzdGVtL2NvbXBvbmVudHMvc3lzcGFzc3dvcmQvc3lzc2lnbmluL3N5c3NpZ25pbi5sZXNzIiwic3JjL2ZlYXR1cmUvZmMvZmNzeXN0ZW0vY29tcG9uZW50cy9zeXNwYXNzd29yZC9zeXNzaWduaW4vRDovMjAxOS9jb2RlL2ZjLWFuZ3VsYXIvc3JjL2ZlYXR1cmUvZmMvZmNzeXN0ZW0vY29tcG9uZW50cy9zeXNwYXNzd29yZC9zeXNzaWduaW4vc3lzc2lnbmluLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7RUFPRTtBQ0NGO0VBQ0UsZUFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QURDRjtBQ0VBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxvREFBQTtFQUNBLDBCQUFBO0VBQ0EsZUFBQTtBREFGO0FDR0E7RUFDRSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsYUFBQTtFQUNBLCtDQUFBO0VBQ0EsZ0JBQUE7QURERjtBQ0tBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBREhGO0FDTUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FESkY7QUNPQTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxVQUFBO0FETEY7QUNRQTtFQUNFLFlBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QURORjtBQ1NBO0VBQ0UsVUFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QURQRjtBQ1VBO0VBQ0UsV0FBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FEUkY7QUNXQTtFQUNFLDZCQUFBO0FEVEY7QUNZQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtBRFZGO0FDYUE7RUFDRSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0FEWEY7QUNjQTtFQUNFLHlCQUFBO0VBQ0EsMEJBQUE7QURaRjtBQ1VBO0VBQ0UseUJBQUE7RUFDQSwwQkFBQTtBRFpGO0FDVUE7RUFDRSx5QkFBQTtFQUNBLDBCQUFBO0FEWkY7QUNVQTtFQUNFLHlCQUFBO0VBQ0EsMEJBQUE7QURaRjtBQ2VBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ1lBO0VBQ0UsNkJBQUE7QURiRjtBQ2dCQTtFQUNFLFdBQUE7RUFDQSx5QkFBQTtFQUNBLGtCQUFBO0FEZEY7QUNpQkE7RUFDRSxXQUFBO0VBQ0EsNkJBQUE7RUFDQSxzQkFBQTtBRGZGO0FDa0JBO0VBQ0UsV0FBQTtFQUNBLGtCQUFBO0FEaEJGO0FDbUJBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBRGpCRjtBQ29CQTtFQUNFLGVBQUE7RUFDQSxXQUFBO0FEbEJGO0FDcUJBO0VBQ0UsaUJBQUE7QURuQkY7QUNzQkE7RUFDRSxtQkFBQTtBRHBCRjtBQ3VCQTtFQUNFLGNBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtBRHJCRjtBQ3dCQTtFQUNFLG1CQUFBO0FEdEJGO0FDeUJBO0VBQ0UsZUFBQTtBRHZCRjtBQzBCQTtFQUNFLFdBQUE7QUR4QkY7QUMyQkE7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0FEekJGO0FDNEJBO0VBQ0UsZUFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FEMUJGO0FDNkJBO0VBQ0Usb0NBQUE7QUQzQkY7QUM4QkE7RUFDRSxpQ0FBQTtBRDVCRjtBQytCQTtFQUNFLGtCQUFBO0FEN0JGO0FDZ0NBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtBRDlCRjtBQ2lDQTtFQUNFLFlBQUE7RUFDQSxpQkFBQTtBRC9CRjtBQUNBLGNBQWM7QUNvQ2Q7RUFDRSxXQUFBO0FEbENGO0FDcUNBO0VBQ0UsV0FBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBRG5DRjtBQ3NDQTtFQUNFLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FEcENGO0FDdUNBO0VBQ0UsZUFBQTtFQUNBLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxXQUFBO0VBQ0EsUUFBQTtBRHJDRjtBQ3dDQTtFQUNFLGVBQUE7RUFDQSxjQUFBO0FEdENGO0FDd0NFO0VBQ0Usc0JBQUE7RUFDQSxxQkFBQTtBRHRDSiIsImZpbGUiOiJzcmMvZmVhdHVyZS9mYy9mY3N5c3RlbS9jb21wb25lbnRzL3N5c3Bhc3N3b3JkL3N5c3NpZ25pbi9zeXNzaWduaW4ubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBAQXV0aG9yOiBob25naG9uZ1xuICogQExhc3RFZGl0b3JzOiBob25naG9uZ1xuICogQERlc2NyaXB0aW9uOiDnmbvlvZXpobXpnaLnmoTmoLflvI9cbiAqIEBlbWFpbDogMzMwMDUzNjY1MUBxcS5jb21cbiAqIEBEYXRlOiAyMDE5LTA0LTAxIDE0OjAxOjQ5XG4gKiBATGFzdEVkaXRUaW1lOiAyMDE5LTA3LTA1IDEyOjQ3OjQ3XG4gKi9cbi5sb2dpbi1pbiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuLmxvZ2luLWJnIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi8uLi8uLi9hc3NldHMvaW1hZ2UvbG9naW5fYmcuanBlZycpIG5vLXJlcGVhdCBmaXhlZCB0b3A7XG4gIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMzQ4cHg7XG4gIG1hcmdpbi10b3A6IC0yMTBweDtcbiAgbWluLWhlaWdodDogNDAwcHg7XG4gIGhlaWdodDogNDAwcHg7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDVweCAwcHggcmdiYSg1MCwgNTAsIDUwLCAwLjIpO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1sZWZ0IHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHdpZHRoOiAzOTBweDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kOiAjNEU4QUVDO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLm1hcC1pbWcge1xuICB3aWR0aDogMzM2cHg7XG4gIGhlaWdodDogMzAwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTAlO1xuICB0b3A6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xNjhweDtcbiAgbWFyZ2luLXRvcDogLTE1MHB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1sZWZ0IC5sZWZ0LWltZyB7XG4gIHdpZHRoOiAzNjVweDtcbiAgaGVpZ2h0OiAxNTZweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMTgycHg7XG4gIHRvcDogMTMwcHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IHtcbiAgZmxvYXQ6IHJpZ2h0O1xuICB3aWR0aDogMjk2cHg7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tcmlnaHQtY29udGVudCB7XG4gIHdpZHRoOiA4MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMzBweDtcbiAgdG9wOiA2MHB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4taDIge1xuICB3aWR0aDogMTAwJTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBjb2xvcjogIzMyMzIzMjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICBmb250LXdlaWdodDogNDAwO1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tZGF0ZSB7XG4gIG1hcmdpbi1ib3R0b206IDVweCAhaW1wb3J0YW50O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3gge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAzMHB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWE7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgY29sb3I6ICM2NjY7XG4gIGZvbnQtc2l6ZTogMTJweDtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IGlucHV0OjpwbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjY2NjY2NjICFpbXBvcnRhbnQ7XG4gIGZvbnQtc2l6ZTogMTJweCAhaW1wb3J0YW50O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggaW5wdXQ6Zm9jdXM6OnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dDpob3ZlciB7XG4gIGNvbG9yOiAjNjY2O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICBib3JkZXItY29sb3I6ICM2NjY7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCAudXNlci1pbnB1dDpmb2N1cyB7XG4gIGNvbG9yOiAjNjY2O1xuICBib3JkZXItY29sb3I6ICM2NjYgIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1pbm5lci1jb250YWluZXIge1xuICB3aWR0aDogMTRweDtcbiAgaGVpZ2h0OiAxNHB4O1xuICBib3JkZXItY29sb3I6ICM5MjkyOTI7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1sYXlvdXQgLm1hdC1jaGVja2JveC1sYWJlbCB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICM2NjY7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1mcmFtZSB7XG4gIGJvcmRlci13aWR0aDogMXB4O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuc2F2ZS13b3JkIC5tYXQtY2hlY2tib3gtY2hlY2tlZC5tYXQtYWNjZW50IC5tYXQtY2hlY2tib3gtYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1idXR0b24ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMzBweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYm9yZGVyOiBub25lO1xuICBiYWNrZ3JvdW5kOiAjM2Y3N2U0O1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjZmZmO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1idG4ge1xuICBtYXJnaW4tdG9wOiA3cHg7XG59XG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5nb29nbGUtZG93bmxvYWQge1xuICB3aWR0aDogMTAwJTtcbn1cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmdvb2dsZS1kb3dubG9hZCBwIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjNjY2O1xufVxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuZ29vZ2xlLWRvd25sb2FkIGEge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjZmY3NTczO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG9naW4tYmcgLnVzZXItaW5wdXQubmctaW52YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNmZjc1NzMgIWltcG9ydGFudDtcbn1cbi5sb2dpbi1iZyAudXNlci1pbnB1dC5uZy12YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWEgIWltcG9ydGFudDtcbn1cbi5sb2dpbi1iZyAudXNlci1ib3gge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ubG9naW4tYmcgLnJlcXVpcmVkLWNvbG9yIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjBweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB0b3A6IDMwcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogI2ZmNzU3MztcbiAgei1pbmRleDogOTtcbiAgYm9yZGVyLXJhZGl1czogMnB4O1xufVxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciBwIHtcbiAgaGVpZ2h0OiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjBweDtcbn1cbi8qIOWdl+e6p+aMiemSruaWh+Wtl+S4jea1ruWKqCAqL1xuOmhvc3QgOjpuZy1kZWVwIC5sb2dpbi1idG4gLmZjLWJ1dHRvbi1ibG9jayA+IHNwYW4ge1xuICBmbG9hdDogbm9uZTtcbn1cbi5zaWdpbi1ib2R5IC5zaWdpbi1lcnJvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICBsaW5lLWhlaWdodDogMjRweDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuLnNpZ2luLWVycm9yLWluIHtcbiAgYmFja2dyb3VuZDogI0ZFRUVFQjtcbiAgYm9yZGVyOiAxcHggc29saWQgI0YxNTUzMjtcbiAgY29sb3I6ICNGMTU1MzM7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIHBhZGRpbmc6IDNweCA2cHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG4ucHJvamVjdC1uYW1lIHtcbiAgZm9udC1zaXplOiAzMHB4O1xuICBjb2xvcjogI2ZmZjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICB3aWR0aDogMTAwJTtcbiAgdG9wOiA0MCU7XG59XG4uZmMtZm9ybS1lcnJvciB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmNTIyMmQ7XG59XG4uZmMtZm9ybS1lcnJvciAuYW50LWlucHV0IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgYm9yZGVyLWNvbG9yOiAjZjUyMjJkO1xufVxuIiwiLypcbiAqIEBBdXRob3I6IGhvbmdob25nXG4gKiBATGFzdEVkaXRvcnM6IGhvbmdob25nXG4gKiBARGVzY3JpcHRpb246IOeZu+W9lemhtemdoueahOagt+W8j1xuICogQGVtYWlsOiAzMzAwNTM2NjUxQHFxLmNvbVxuICogQERhdGU6IDIwMTktMDQtMDEgMTQ6MDE6NDlcbiAqIEBMYXN0RWRpdFRpbWU6IDIwMTktMDctMDUgMTI6NDc6NDdcbiAqL1xuLmxvZ2luLWluIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5sb2dpbi1iZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vLi4vLi4vYXNzZXRzL2ltYWdlL2xvZ2luX2JnLmpwZWcnKSBuby1yZXBlYXQgZml4ZWQgdG9wO1xuICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcbiAgcG9zaXRpb246IGZpeGVkO1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiAtMzQ4cHg7XG4gIG1hcmdpbi10b3A6IC0yMTBweDtcbiAgbWluLWhlaWdodDogNDAwcHg7XG4gIGhlaWdodDogNDAwcHg7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDVweCAwcHggcmdiYSg1MCwgNTAsIDUwLCAwLjIpO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICA7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tbGVmdCB7XG4gIGZsb2F0OiBsZWZ0O1xuICB3aWR0aDogMzkwcHg7XG4gIGhlaWdodDogMTAwJTtcbiAgYmFja2dyb3VuZDogIzRFOEFFQztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLm1hcC1pbWcge1xuICB3aWR0aDogMzM2cHg7XG4gIGhlaWdodDogMzAwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTAlO1xuICB0b3A6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xNjhweDtcbiAgbWFyZ2luLXRvcDogLTE1MHB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLWxlZnQgLmxlZnQtaW1nIHtcbiAgd2lkdGg6IDM2NXB4O1xuICBoZWlnaHQ6IDE1NnB4O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC0xODJweDtcbiAgdG9wOiAxMzBweDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbiAgd2lkdGg6IDI5NnB4O1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tcmlnaHQtY29udGVudCB7XG4gIHdpZHRoOiA4MCU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMzBweDtcbiAgdG9wOiA2MHB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5sb2dpbi1oMiB7XG4gIHdpZHRoOiAxMDAlO1xuICBmb250LXNpemU6IDE2cHg7XG4gIGNvbG9yOiAjMzIzMjMyO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWRhdGUge1xuICBtYXJnaW4tYm90dG9tOiA1cHggIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3gge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAzMHB4O1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IC51c2VyLWlucHV0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBsaW5lLWhlaWdodDogMzBweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgYm9yZGVyOiAxcHggc29saWQgI2FhYTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjb2xvcjogIzY2NjtcbiAgZm9udC1zaXplOiAxMnB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC51c2VyLWJveCBpbnB1dDo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogI2NjY2NjYyAhaW1wb3J0YW50O1xuICBmb250LXNpemU6IDEycHggIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggaW5wdXQ6Zm9jdXM6OnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnVzZXItYm94IC51c2VyLWlucHV0OmhvdmVyIHtcbiAgY29sb3I6ICM2NjY7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlci1jb2xvcjogIzY2Njtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAudXNlci1ib3ggLnVzZXItaW5wdXQ6Zm9jdXMge1xuICBjb2xvcjogIzY2NjtcbiAgYm9yZGVyLWNvbG9yOiAjNjY2ICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLnNhdmUtd29yZCAubWF0LWNoZWNrYm94LWlubmVyLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxNHB4O1xuICBoZWlnaHQ6IDE0cHg7XG4gIGJvcmRlci1jb2xvcjogIzkyOTI5Mjtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuc2F2ZS13b3JkIC5tYXQtY2hlY2tib3gtbGF5b3V0IC5tYXQtY2hlY2tib3gtbGFiZWwge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1mcmFtZSB7XG4gIGJvcmRlci13aWR0aDogMXB4O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5zYXZlLXdvcmQgLm1hdC1jaGVja2JveC1jaGVja2VkLm1hdC1hY2NlbnQgLm1hdC1jaGVja2JveC1iYWNrZ3JvdW5kIHtcbiAgYmFja2dyb3VuZDogIzNmNzdlNDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAubG9naW4tYnV0dG9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDMwcHg7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlcjogbm9uZTtcbiAgYmFja2dyb3VuZDogIzNmNzdlNDtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMzZjc3ZTQ7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmxvZ2luLWJ0biB7XG4gIG1hcmdpbi10b3A6IDdweDtcbn1cblxuLmxvZ2luLWJnIC5sb2dpbi1jb250ZW50IC5sb2dpbi1yaWdodCAuZ29vZ2xlLWRvd25sb2FkIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5sb2dpbi1iZyAubG9naW4tY29udGVudCAubG9naW4tcmlnaHQgLmdvb2dsZS1kb3dubG9hZCBwIHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4ubG9naW4tYmcgLmxvZ2luLWNvbnRlbnQgLmxvZ2luLXJpZ2h0IC5nb29nbGUtZG93bmxvYWQgYSB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmZjc1NzM7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLmxvZ2luLWJnIC51c2VyLWlucHV0Lm5nLWludmFsaWQge1xuICBib3JkZXI6IDFweCBzb2xpZCAjZmY3NTczICFpbXBvcnRhbnQ7XG59XG5cbi5sb2dpbi1iZyAudXNlci1pbnB1dC5uZy12YWxpZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNhYWEgIWltcG9ydGFudDtcbn1cblxuLmxvZ2luLWJnIC51c2VyLWJveCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDIwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgdG9wOiAzMHB4O1xuICBmb250LXNpemU6IDEycHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICNmZjc1NzM7XG4gIHotaW5kZXg6IDk7XG4gIGJvcmRlci1yYWRpdXM6IDJweDtcbn1cblxuLmxvZ2luLWJnIC5yZXF1aXJlZC1jb2xvciBwIHtcbiAgaGVpZ2h0OiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjBweDtcbn1cblxuXG4vKiDlnZfnuqfmjInpkq7mloflrZfkuI3mta7liqggKi9cblxuOmhvc3QgOjpuZy1kZWVwIC5sb2dpbi1idG4gLmZjLWJ1dHRvbi1ibG9jaz5zcGFuIHtcbiAgZmxvYXQ6IG5vbmU7XG59XG5cbi5zaWdpbi1ib2R5IC5zaWdpbi1lcnJvciB7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICBsaW5lLWhlaWdodDogMjRweDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4uc2lnaW4tZXJyb3ItaW4ge1xuICBiYWNrZ3JvdW5kOiAjRkVFRUVCO1xuICBib3JkZXI6IDFweCBzb2xpZCAjRjE1NTMyO1xuICBjb2xvcjogI0YxNTUzMztcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgcGFkZGluZzogM3B4IDZweDtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLnByb2plY3QtbmFtZSB7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgY29sb3I6ICNmZmY7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIHRvcDogNDAlO1xufVxuXG4uZmMtZm9ybS1lcnJvciB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6ICNmNTIyMmQ7XG5cbiAgJiAuYW50LWlucHV0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1jb2xvcjogI2Y1MjIyZDtcbiAgfVxufVxuIl19 */"
 
 /***/ }),
 
@@ -3285,10 +3285,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/environments/environment.dev */ "./src/environments/environment.dev.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 注册
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-04-17 10:10:48
  */
@@ -3346,12 +3346,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment.dev */ "./src/environments/environment.dev.ts");
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-11 09:17:21
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-11 15:26:56
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -3463,10 +3463,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _forbidden_name_directive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./forbidden-name.directive */ "./src/shared/forbidden-name.directive.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 共享模块
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-19 10:08:26
  * @LastEditTime: 2019-04-19 10:12:39
  */

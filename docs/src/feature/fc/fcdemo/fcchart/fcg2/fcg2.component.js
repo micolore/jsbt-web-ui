@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 新增
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-14 15:56:20
  */
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let Fcg2Component = class Fcg2Component {
     constructor(router, activedRoute) {
         this.router = router;

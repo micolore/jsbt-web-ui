@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:52:47
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 17:22:43
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 import { Component, Input } from '@angular/core';
 import * as G2 from '@antv/g2';
+import * as tslib_1 from "tslib";
 let Fcg2linerComponent = class Fcg2linerComponent {
     constructor() {
     }

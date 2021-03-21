@@ -1,16 +1,6 @@
-/*
- * @Author: honghong
- * @Date: 2019-10-16 15:46:03
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-16 17:36:53
- * @Description: 
- * @email: 3300536651@qq.com
- */
-
-import { Component, OnInit } from '@angular/core'
-import { ActivatedRoute, Router } from '@angular/router'
-import { environment } from 'src/environments/environment.dev';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'fc-templateform',

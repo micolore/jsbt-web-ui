@@ -1,10 +1,10 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-07-05 16:11:36
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2020-02-14 12:32:47
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html

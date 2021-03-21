@@ -16,10 +16,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fcsystem_route__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fcsystem.route */ "./src/feature/fc/fcsystem/fcsystem.route.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 系统模块
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-14 16:36:54
  */

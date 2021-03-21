@@ -1,15 +1,15 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-16 15:49:44
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-16 16:04:51
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import * as tslib_1 from "tslib";
 import { Component, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UtilService } from 'src/fccore/util/util.service';
+import * as tslib_1 from "tslib";
 let FctemplatetreelistComponent = class FctemplatetreelistComponent {
     constructor(router, activedRoute) {
         this.router = router;

@@ -1,11 +1,3 @@
-/*
- * @Author: honghong
- * @Date: 2019-10-11 17:55:30
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-14 16:15:13
- * @Description:
- * @email: 3300536651@qq.com
- */
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 

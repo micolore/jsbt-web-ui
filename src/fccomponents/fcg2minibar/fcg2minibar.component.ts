@@ -1,12 +1,12 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:50:43
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 14:35:23
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import * as G2 from '@antv/g2';
 @Component({
     selector: 'fc-g2minibar',

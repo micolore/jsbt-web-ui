@@ -1,11 +1,11 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-11 09:50:12
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-11 15:08:52
  * @Description:  不使用cz-conventional-changelog (一个符合 Angular团队规范的 preset)
  * 自定义格式
- * @email: 3300536651@qq.com
+ * @email:  
  */
 'use strict';
 module.exports = {

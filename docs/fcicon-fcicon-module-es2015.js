@@ -990,7 +990,7 @@ module.exports = closest;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @Date: 2019-10-11 17:55:22\r\n * @LastEditors: honghong\r\n * @LastEditTime: 2019-10-12 17:15:20\r\n * @Description: \r\n * @email: 3300536651@qq.com\r\n -->\r\n<div nz-row class=\"fc-row\">\r\n  <div nz-col nzSpan=\"24\">\r\n    <nz-tabset>\r\n      <nz-tab nzTitle=\"AntDesign\">\r\n        <ul class=\"fc-icon-show\">\r\n          <li class=\"fc-icon-item\" *ngFor=\"let icon of icons\" (click)=\"copyed(getIconCode(icon), $event)\">\r\n            <i class=\"copyIcon\" nz-icon [nzType]=\"icon.name\" [nzTheme]=\"icon.theme\"></i>\r\n            <span class=\"fc-icon-text\">\r\n              {{icon.name}}\r\n            </span>\r\n          </li>\r\n        </ul>\r\n      </nz-tab>\r\n      <nz-tab nzTitle=\"阿里巴巴矢量图标\">\r\n        <a href=\"https://www.iconfont.cn\" target=\"_blank\">阿里巴巴矢量图标库官网 </a>\r\n        <ul class=\"fc-icon-show\">\r\n          <li class=\"fc-icon-item\" *ngFor=\"let icon of aliIcons\" (click)=\"copyed(getIconCode(icon), $event)\">\r\n            <i class=\"icon iconfont copyIcon\" [ngClass]=\"icon.name\"></i>\r\n            <span class=\"fc-icon-text\">\r\n              {{icon.name}}\r\n            </span>\r\n          </li>\r\n        </ul>\r\n      </nz-tab>\r\n    </nz-tabset>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @Date: 2019-10-11 17:55:22\r\n * @LastEditors: kubrick\r\n * @LastEditTime:  2021-03-21 17:15:20\r\n * @Description: \r\n * @email:  \r\n -->\r\n<div nz-row class=\"fc-row\">\r\n  <div nz-col nzSpan=\"24\">\r\n    <nz-tabset>\r\n      <nz-tab nzTitle=\"AntDesign\">\r\n        <ul class=\"fc-icon-show\">\r\n          <li class=\"fc-icon-item\" *ngFor=\"let icon of icons\" (click)=\"copyed(getIconCode(icon), $event)\">\r\n            <i class=\"copyIcon\" nz-icon [nzType]=\"icon.name\" [nzTheme]=\"icon.theme\"></i>\r\n            <span class=\"fc-icon-text\">\r\n              {{icon.name}}\r\n            </span>\r\n          </li>\r\n        </ul>\r\n      </nz-tab>\r\n      <nz-tab nzTitle=\"阿里巴巴矢量图标\">\r\n        <a href=\"https://www.iconfont.cn\" target=\"_blank\">阿里巴巴矢量图标库官网 </a>\r\n        <ul class=\"fc-icon-show\">\r\n          <li class=\"fc-icon-item\" *ngFor=\"let icon of aliIcons\" (click)=\"copyed(getIconCode(icon), $event)\">\r\n            <i class=\"icon iconfont copyIcon\" [ngClass]=\"icon.name\"></i>\r\n            <span class=\"fc-icon-text\">\r\n              {{icon.name}}\r\n            </span>\r\n          </li>\r\n        </ul>\r\n      </nz-tab>\r\n    </nz-tabset>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1012,12 +1012,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(clipboard__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd.js");
 /*
- * @Author: honghong
- * @Date: 2019-10-12 09:28:32
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-12 14:27:29
+ * @Author: kubrick
+ * @Date:  2021-03-21 09:28:32
+ * @LastEditors: kubrick
+ * @LastEditTime:  2021-03-21 14:27:29
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 
@@ -1399,12 +1399,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fcicon_route__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fcicon.route */ "./src/feature/fc/fcdemo/fcicon/fcicon.route.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 

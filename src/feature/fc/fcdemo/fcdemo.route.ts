@@ -1,9 +1,9 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @LastEditors  : Please set LastEditors
  * @Description: 示例模块的路由
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime : 2020-03-02 09:56:55
  */
 import { Routes } from '@angular/router';

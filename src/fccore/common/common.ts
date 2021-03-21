@@ -1,14 +1,6 @@
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 公共方法
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
- * @LastEditTime: 2020-03-03 15:20:39
- */
 import { EventEmitter, Injectable } from '@angular/core';
 import * as numeral from 'numeral';
-import { forkJoin, concat, Observable, ObservableInput, asyncScheduler } from 'rxjs';
+import { concat, forkJoin, Observable } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class CommonService {
   static eventEmit: EventEmitter<any> = new EventEmitter();

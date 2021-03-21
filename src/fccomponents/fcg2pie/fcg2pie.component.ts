@@ -1,15 +1,14 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-14 10:52:01
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 15:16:37
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import { Component, AfterViewChecked, AfterViewInit, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import * as G2 from '@antv/g2';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import DataSet from '@antv/data-set';
+import * as G2 from '@antv/g2';
 import * as $ from 'jquery';
 @Component({
     selector: 'fc-g2pie',

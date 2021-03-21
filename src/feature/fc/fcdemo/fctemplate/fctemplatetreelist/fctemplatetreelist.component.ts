@@ -1,10 +1,10 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-16 15:49:44
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-16 16:04:51
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
 
 import { Component, HostListener, OnInit } from '@angular/core';

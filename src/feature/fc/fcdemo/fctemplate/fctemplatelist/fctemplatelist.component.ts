@@ -1,16 +1,6 @@
-/*
- * @Author: honghong
- * @Date: 2019-10-16 15:51:40
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-16 17:09:37
- * @Description: 
- * @email: 3300536651@qq.com
- */
-
-
-import { Component, OnInit, HostListener } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UtilService } from 'src/fccore/util/util.service';
 
 @Component({

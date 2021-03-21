@@ -1,16 +1,6 @@
+import { fakeAsync } from '@angular/core/testing';
 import { CommonService } from 'src/fccore/common/common';
-import { fakeAsync, async, tick } from '@angular/core/testing';
-import { HeroService } from '_mock/hero.service';
-import { merge, interval } from 'rxjs';
-import { take } from 'rxjs/operators';
-/*
- * @Author: honghong
- * @Date: 2020-02-13 17:36:24
- * @LastEditors: honghong
- * @LastEditTime: 2020-03-03 15:22:03
- * @Description:
- * @email: 3300536651@qq.com
- */
+ 
 describe('commonService', () => {
   // 发生事件 待研究
   //  describe('观察者模式', () => {
@@ -573,44 +563,44 @@ describe('commonService', () => {
     }
   });
   // 串行执行两个订阅任务
-  describe('#createObservableConcat function', () => {
-    it('should describe two task', () => {
-      const obs1 = HeroService.getFruitsCategories();
-      const obs2 = HeroService.getCitysCategories();
-      const r = [1, 2, 3, 4, 5, 6, 7, 8];
-      let log = [];
-      CommonService.createObservableConcat(obs1, obs2).subscribe(concat => {
-        expect(true).toBe(true);
-        log.push(concat);
-      });
-      expect(log[0]).toEqual(['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut']);
-      expect(log[1]).toEqual(['Beijing', 'Tianjing', 'Shanghai', 'Hangzhou', 'Nanjing', 'Chengdu', 'Shenzhen']);
-    });
-  });
+  // describe('#createObservableConcat function', () => {
+  //   it('should describe two task', () => {
+  //     const obs1 = HeroService.getFruitsCategories();
+  //     const obs2 = HeroService.getCitysCategories();
+  //     const r = [1, 2, 3, 4, 5, 6, 7, 8];
+  //     let log = [];
+  //     CommonService.createObservableConcat(obs1, obs2).subscribe(concat => {
+  //       expect(true).toBe(true);
+  //       log.push(concat);
+  //     });
+  //     expect(log[0]).toEqual(['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut']);
+  //     expect(log[1]).toEqual(['Beijing', 'Tianjing', 'Shanghai', 'Hangzhou', 'Nanjing', 'Chengdu', 'Shenzhen']);
+  //   });
+  // });
   // 并行执行多个订阅任务
-  describe('#createObservableJoin function', () => {
-    it('should describe mutiple', () => {
-      const obs1 = HeroService.getFruitsCategories();
-      const obs2 = HeroService.getAnimalsCategories();
-      const obs3 = HeroService.getCitysCategories();
-      let output;
-      // 两个订阅任务
-      CommonService.createObservableJoin([obs1, obs2]).subscribe(result => {
-        output = [
-          ['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut'],
-          ['Mammals', 'Birds', 'Reptiles', 'Amphibians', 'Fishes', 'Insects', 'Crustaceans']
-        ];
-        expect(result).toEqual(output);
-      });
-      // 两个以上订阅任务
-      CommonService.createObservableJoin([obs1, obs2, obs3]).subscribe(result => {
-        output = [
-          ['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut'],
-          ['Mammals', 'Birds', 'Reptiles', 'Amphibians', 'Fishes', 'Insects', 'Crustaceans'],
-          ['Beijing', 'Tianjing', 'Shanghai', 'Hangzhou', 'Nanjing', 'Chengdu', 'Shenzhen']
-        ];
-        expect(result).toEqual(output);
-      });
-    });
-  });
+  // describe('#createObservableJoin function', () => {
+  //   it('should describe mutiple', () => {
+  //     const obs1 = HeroService.getFruitsCategories();
+  //     const obs2 = HeroService.getAnimalsCategories();
+  //     const obs3 = HeroService.getCitysCategories();
+  //     let output;
+  //     // 两个订阅任务
+  //     CommonService.createObservableJoin([obs1, obs2]).subscribe(result => {
+  //       output = [
+  //         ['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut'],
+  //         ['Mammals', 'Birds', 'Reptiles', 'Amphibians', 'Fishes', 'Insects', 'Crustaceans']
+  //       ];
+  //       expect(result).toEqual(output);
+  //     });
+  //     // 两个以上订阅任务
+  //     CommonService.createObservableJoin([obs1, obs2, obs3]).subscribe(result => {
+  //       output = [
+  //         ['Achene', 'Berry', 'Caryopisis', 'Drupe', 'Legume', 'Nut'],
+  //         ['Mammals', 'Birds', 'Reptiles', 'Amphibians', 'Fishes', 'Insects', 'Crustaceans'],
+  //         ['Beijing', 'Tianjing', 'Shanghai', 'Hangzhou', 'Nanjing', 'Chengdu', 'Shenzhen']
+  //       ];
+  //       expect(result).toEqual(output);
+  //     });
+  //   });
+  // });
 });

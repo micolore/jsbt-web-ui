@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-11 17:55:30
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-14 16:15:13
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let FcantdComponent = class FcantdComponent {
     constructor(router, activedRoute) {
         this.router = router;

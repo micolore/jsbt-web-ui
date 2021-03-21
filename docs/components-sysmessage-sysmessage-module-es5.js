@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 消息详情\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 12:33:56\r\n -->\r\nSysmessagedetailComponent\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 消息详情\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 12:33:56\r\n -->\r\nSysmessagedetailComponent\r\n"
 
 /***/ }),
 
@@ -30,12 +30,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sysmessagedetail_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sysmessagedetail.component */ "./src/feature/fc/fcsystem/components/sysmessage/sysmessagedetail.component.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 
@@ -103,10 +103,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 消息详情
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-04-17 12:34:14
  */

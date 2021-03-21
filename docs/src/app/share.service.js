@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 单例服务，参考网址: https://angular.cn/guide/singleton-services
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-05-07 18:12:10
  */
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import * as tslib_1 from "tslib";
 let ShareService = class ShareService {
     constructor() {
         // 切换项目名称

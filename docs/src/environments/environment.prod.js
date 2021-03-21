@@ -1,8 +1,8 @@
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 上线环境的环境配置,上线环境需要过aot打包，命令ng build --aot
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-07-11 16:49:04
  */

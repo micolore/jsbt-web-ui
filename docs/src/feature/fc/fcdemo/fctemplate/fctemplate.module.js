@@ -1,18 +1,18 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
  * @LastEditTime: 2019-10-16 15:53:24
  */
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FccomponentModule } from 'src/fccomponents/fccomponent.module';
 import { SharedModule } from 'src/shared';
-import { Routers } from './fctemplate.route';
+import * as tslib_1 from "tslib";
 import { FctemplatedetailComponent } from './fctempatedetail/fctemplatedetail.component';
+import { Routers } from './fctemplate.route';
 import { FctemplateformComponent } from './fctemplateform/fctemplateform.component';
 import { FctemplatelistComponent } from './fctemplatelist/fctemplatelist.component';
 import { FctemplatetreelistComponent } from './fctemplatetreelist/fctemplatetreelist.component';

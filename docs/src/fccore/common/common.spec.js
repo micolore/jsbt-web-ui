@@ -1,12 +1,12 @@
 import { fakeAsync } from '@angular/core/testing';
 import { CommonService } from './common';
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2020-02-13 17:36:24
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2020-02-25 20:01:09
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 describe('commonService', () => {
     // 发生事件 待研究

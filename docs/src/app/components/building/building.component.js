@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 正在开发中
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-09 10:46:22
  * @LastEditTime: 2019-04-17 09:54:47
  */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let BuildingComponent = class BuildingComponent {
     constructor(router) {
         this.router = router;

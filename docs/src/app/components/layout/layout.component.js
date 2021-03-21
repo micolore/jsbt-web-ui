@@ -1,10 +1,9 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 整体布局包括顶部工具栏、左侧菜单、侧边栏、选项卡导航主体内容区
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-16 17:59:22
  */
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
@@ -14,6 +13,7 @@ import { LayoutService } from 'src/app/service/layout.service';
 import { ShareService } from 'src/app/share.service';
 import { CacheService } from 'src/fccore/common/cache';
 import { CommonService } from 'src/fccore/common/common';
+import * as tslib_1 from "tslib";
 import { environment } from '../../../environments/environment.dev';
 import { SyseditpasswordComponent } from './dialog/syseditpassword.dialog';
 let LayoutComponent = class LayoutComponent {

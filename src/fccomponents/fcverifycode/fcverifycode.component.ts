@@ -1,13 +1,12 @@
-import { OnInit, Component, ViewChild, ElementRef, Input } from '@angular/core';
-import { isArray } from 'util';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-17 09:43:45
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-18 14:10:50
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
 @Component({
     selector: 'fc-verifycode',

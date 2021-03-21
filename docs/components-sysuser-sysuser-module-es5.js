@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 用户管理\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 12:33:13\r\n -->\r\nsysuser\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 用户管理\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-04-17 12:33:13\r\n -->\r\nsysuser\r\n"
 
 /***/ }),
 
@@ -28,10 +28,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 权限管理的业务
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-04-17 12:36:33
  */
@@ -69,10 +69,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _business_sysuser_business__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../business/sysuser.business */ "./src/feature/fc/fcsystem/business/sysuser.business.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 用户管理
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-14 16:29:36
  */
@@ -128,12 +128,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sysuser_route__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sysuser.route */ "./src/feature/fc/fcsystem/components/sysuser/sysuser.route.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 

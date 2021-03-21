@@ -1,13 +1,13 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-07-04 17:15:57
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-15 10:55:06
  * @Description: 
- * @email: 3300536651@qq.com
+ * @email:  
  */
 import { Component, Input, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { NzModalRef } from 'ng-zorro-antd';
 @Component({
   selector: 'sys-editpassword',

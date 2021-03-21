@@ -1,14 +1,14 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-16 15:46:03
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-16 16:03:09
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import * as tslib_1 from "tslib";
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let FctemplatedetailComponent = class FctemplatedetailComponent {
     constructor(router, activedRoute) {
         this.router = router;

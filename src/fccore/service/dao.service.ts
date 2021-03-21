@@ -1,11 +1,3 @@
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 前后端通道
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
- * @LastEditTime: 2019-04-17 11:43:25
- */
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.dev';

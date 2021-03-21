@@ -1,16 +1,16 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: layout业务
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-07-24 11:09:21
  */
 import { Injectable } from '@angular/core';
 import { NzMessageService } from 'ng-zorro-antd';
 import { environment } from 'src/environments/environment.dev';
 import { LogService } from 'src/fccore/service/log.service';
+import * as tslib_1 from "tslib";
 import { menus } from '_mock/_menus';
 let LayoutService = class LayoutService {
     constructor(messageService) {

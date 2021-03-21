@@ -1,19 +1,10 @@
-/*
- * @Author: honghong
- * @Date: 2019-10-12 09:28:32
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-12 14:27:29
- * @Description: 
- * @email: 3300536651@qq.com
- */
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
-import * as AllIcons from '@ant-design/icons-angular/icons';
 import { IconDefinition } from '@ant-design/icons-angular';
+import * as AllIcons from '@ant-design/icons-angular/icons';
 import Clipboard from 'clipboard';
-import { NzMessageBaseService, NzMessageService } from 'ng-zorro-antd';
+import { NzMessageService } from 'ng-zorro-antd';
+
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };

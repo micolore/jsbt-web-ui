@@ -1,21 +1,21 @@
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import * as tslib_1 from "tslib";
-import { Component, ViewChild, ElementRef, Input } from '@angular/core';
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-17 09:43:45
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-18 14:10:50
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 let Fcverifycode = class Fcverifycode {
     /*
-     * @Author: honghong
+     * @Author: kubrick
      * @Date: 2019-10-17 09:43:45
-     * @LastEditors: honghong
+     * @LastEditors: kubrick
      * @LastEditTime: 2019-10-18 14:10:50
      * @Description:
-     * @email: 3300536651@qq.com
+     * @email:  
      */
     constructor() {
         // 显示错误

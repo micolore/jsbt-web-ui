@@ -1,17 +1,17 @@
 /*
- * @Author: honghong
- * @Date: 2019-10-12 09:28:32
- * @LastEditors: honghong
- * @LastEditTime: 2019-10-12 14:27:29
+ * @Author: kubrick
+ * @Date:  2021-03-21 09:28:32
+ * @LastEditors: kubrick
+ * @LastEditTime:  2021-03-21 14:27:29
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import * as tslib_1 from "tslib";
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import Clipboard from 'clipboard';
 import { NzMessageService } from 'ng-zorro-antd';
+import * as tslib_1 from "tslib";
 const antDesignIcons = AllIcons;
 let FciconComponent = class FciconComponent {
     constructor(router, activedRoute, message) {

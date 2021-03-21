@@ -1,22 +1,22 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: fccomponent平台组件模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
+ * @email:  
+ * @Date:  2021-03-21 15:57:43
  * @LastEditTime: 2019-10-17 09:58:37
  */
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/shared';
-import { FcimgviewComponent } from './fcimgview/fcimgview.component';
-import { Fcg2radarComponent } from './fcg2radar/fcg2radar.component';
+import * as tslib_1 from "tslib";
 import { Fcg2barComponent } from './fcg2bar/fcg2bar.component';
 import { Fcg2linerComponent } from './fcg2line/fcg2line.component';
 import { Fcg2minibarComponent } from './fcg2minibar/fcg2minibar.component';
 import { Fcg2pieComponent } from './fcg2pie/fcg2pie.component';
+import { Fcg2radarComponent } from './fcg2radar/fcg2radar.component';
+import { FcimgviewComponent } from './fcimgview/fcimgview.component';
 import { Fcverifycode } from './fcverifycode/fcverifycode.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 let FccomponentModule = class FccomponentModule {
 };
 FccomponentModule = tslib_1.__decorate([

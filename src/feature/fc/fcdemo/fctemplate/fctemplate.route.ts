@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
-import { FctemplatelistComponent } from './fctemplatelist/fctemplatelist.component';
-import { FctemplateformComponent } from './fctemplateform/fctemplateform.component';
 import { FctemplatedetailComponent } from './fctempatedetail/fctemplatedetail.component';
+import { FctemplateformComponent } from './fctemplateform/fctemplateform.component';
+import { FctemplatelistComponent } from './fctemplatelist/fctemplatelist.component';
 import { FctemplatetreelistComponent } from './fctemplatetreelist/fctemplatetreelist.component';
-
 
 export const Routers: Routes = [
   {

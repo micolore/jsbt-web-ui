@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n * @Author: honghong\r\n * @LastEditors: honghong\r\n * @Description: 首页\r\n * @email: 3300536651@qq.com\r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-10-14 15:22:15\r\n -->\r\n<div nz-row [nzGutter]=\"20\" class=\"fc-row\">\r\n  <!-- 饼图 -->\r\n  <div nz-col [nzSpan]=\"12\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"饼状图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2pie></fc-g2pie>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n\r\n\r\n  <!-- 雷达图 -->\r\n  <div nz-col [nzSpan]=\"12\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"雷达图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2radar fcId=\"chartRadar\" [fcData]=\"chartRadarData\"></fc-g2radar>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n  <!-- 柱状图 -->\r\n  <div nz-col [nzSpan]=\"24\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"柱状图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2bar fcId=\"chartBar2\" [fcData]=\"chartBarData\"></fc-g2bar>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<!--\r\n * @Author: kubrick\r\n * @LastEditors: kubrick\r\n * @Description: 首页\r\n * @email:  \r\n * @Date: 2019-04-12 16:39:30\r\n * @LastEditTime: 2019-10-14 15:22:15\r\n -->\r\n<div nz-row [nzGutter]=\"20\" class=\"fc-row\">\r\n  <!-- 饼图 -->\r\n  <div nz-col [nzSpan]=\"12\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"饼状图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2pie></fc-g2pie>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n\r\n\r\n  <!-- 雷达图 -->\r\n  <div nz-col [nzSpan]=\"12\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"雷达图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2radar fcId=\"chartRadar\" [fcData]=\"chartRadarData\"></fc-g2radar>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n  <!-- 柱状图 -->\r\n  <div nz-col [nzSpan]=\"24\">\r\n    <nz-card class=\"fc-chart-card\" nzTitle=\"柱状图\" [nzBordered]=\"false\">\r\n      <div class=\"fc-chart-box\">\r\n        <fc-g2bar fcId=\"chartBar2\" [fcData]=\"chartBarData\"></fc-g2bar>\r\n      </div>\r\n    </nz-card>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -30,12 +30,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fcg2_fcg2_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fcg2/fcg2.component */ "./src/feature/fc/fcdemo/fcchart/fcg2/fcg2.component.ts");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 示例模块
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 16:02:48
- * @LastEditTime: 2019-10-12 09:29:28
+ * @email:  
+ * @Date:  2021-03-21 16:02:48
+ * @LastEditTime:  2021-03-21 09:29:28
  */
 
 
@@ -103,10 +103,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 新增
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-10-14 15:56:20
  */

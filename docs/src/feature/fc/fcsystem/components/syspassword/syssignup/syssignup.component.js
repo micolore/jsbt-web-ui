@@ -1,9 +1,8 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 注册
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-04-12 16:39:30
  * @LastEditTime: 2019-04-17 10:10:48
  */
@@ -11,6 +10,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.dev';
+import * as tslib_1 from "tslib";
 let SyssignupComponent = class SyssignupComponent {
     constructor(router, fb) {
         this.router = router;

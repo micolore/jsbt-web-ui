@@ -1,14 +1,14 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
- * @LastEditors: honghong
+ * @Author: kubrick
+ * @LastEditors: kubrick
  * @Description: 忘记密码
- * @email: 3300536651@qq.com
+ * @email:  
  * @Date: 2019-02-18 10:59:15
  * @LastEditTime: 2019-04-17 09:55:51
  */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let SysforgotComponent = class SysforgotComponent {
     constructor(router) {
         this.router = router;

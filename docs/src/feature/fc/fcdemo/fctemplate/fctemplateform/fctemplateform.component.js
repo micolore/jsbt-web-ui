@@ -1,15 +1,15 @@
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-10-16 15:46:03
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-16 17:36:53
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
-import * as tslib_1 from "tslib";
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import * as tslib_1 from "tslib";
 let FctemplateformComponent = class FctemplateformComponent {
     constructor(router, activedRoute, fb) {
         this.router = router;

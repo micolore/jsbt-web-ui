@@ -1,15 +1,15 @@
-import * as tslib_1 from "tslib";
 /*
- * @Author: honghong
+ * @Author: kubrick
  * @Date: 2019-07-04 17:15:57
- * @LastEditors: honghong
+ * @LastEditors: kubrick
  * @LastEditTime: 2019-10-15 10:55:06
  * @Description:
- * @email: 3300536651@qq.com
+ * @email:  
  */
 import { Component, Input } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { NzModalRef } from 'ng-zorro-antd';
+import * as tslib_1 from "tslib";
 let SyseditpasswordComponent = class SyseditpasswordComponent {
     constructor(fb, subject) {
         this.fb = fb;
