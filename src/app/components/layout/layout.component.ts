@@ -289,7 +289,7 @@ export class LayoutComponent implements OnInit {
   // 菜单导航的宽度
   menuWidth = 200
   // 头像
-  avatar = 'assets/image/avatar.jpeg'
+  avatar = 'assets/image/avatar.png'
   // 侧边栏
   @ViewChild('navside', { static: false })
   navside: ElementRef

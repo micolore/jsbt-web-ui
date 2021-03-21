@@ -1,17 +1,9 @@
-import * as tslib_1 from "tslib";
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 登录
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
- * @LastEditTime: 2019-10-11 15:28:50
- */
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.dev';
 import { Fcverifycode } from 'src/fccomponents/fcverifycode/fcverifycode.component';
 import { CacheService } from 'src/fccore/common/cache';
+import * as tslib_1 from "tslib";
 const PROJECT_NAME = environment.projectName;
 let SyssigninComponent = class SyssigninComponent {
     constructor(router) {

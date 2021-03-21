@@ -1,20 +1,10 @@
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 路由复用策略,跳转路由时，params的refresh='Y'时，刷新页面，refresh='N'时，不刷新页面，保留用户操作状态
- * @email: 3300536651@qq.com
- * @Date: 2019-02-18 10:59:15
- * @LastEditTime: 2019-07-05 12:15:00
- */
 import {
   ActivatedRouteSnapshot,
   DetachedRouteHandle,
-  RouteReuseStrategy,
+
   PRIMARY_OUTLET,
-  Route,
-  NavigationEnd
-} from '@angular/router'
-import { environment } from 'src/environments/environment.dev';
+  Route, RouteReuseStrategy
+} from '@angular/router';
 export class FcRouteReuseStrategy implements RouteReuseStrategy {
   private static waitDelete: string
   public static handlers: { [key: string]: DetachedRouteHandle } = {}

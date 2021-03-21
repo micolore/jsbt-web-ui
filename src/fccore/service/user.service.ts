@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
@@ -7,17 +8,24 @@ import { CommonService } from 'src/fccore/common/common';
 @Injectable({
   providedIn: 'root'
 })
+@Injectable()
+export class ConfigService {
+}
+
 export class UserService implements CanActivate {
-  constructor(private router: Router) {
+  constructor(private router: Router,private http: HttpClient) {
     this.router = router;
+    this.http = http;
   }
+
   /**
-   * 路由检查
+   * 路由检查，请求服务器
    * @param route 路由
    * @param state 状态
    */
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     /** @type {?} */
+    // 从缓存里面获取用户信息
     const user = this.getUserInfo();
     if (user && user.USERCODE !== undefined) {
       return true;
@@ -47,12 +55,12 @@ export class UserService implements CanActivate {
     console.log(loginInfo, '=====loginInfo');
     //const validateData = JSON.parse(loginInfo);
     /** @type {?} */
-    const data = {
-      PASSWORD: CommonService.enCode64(password),
-      USERID: CommonService.enCode64(userId)
-    }
-      ;
-    if ("admin" === data.USERID ) {
+    const code = 0;
+    const getUrl = "http://localhost:10001/api/common/hello_react"
+    this.http.get<any>(getUrl).subscribe(data => {
+        console.log("getUrl data:",data)
+    });
+    if (code === 0 ) {
       return of({
         code: '0',
         message: '登录成功'

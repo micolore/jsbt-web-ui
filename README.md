@@ -1,4 +1,3 @@
-<img src="./media/logo.png" style="margin: 0 auto;display: block;">
 Admin template based on AntDesign and Angular8
 <p align="center">
     <a href="https://travis-ci.org/fc-angular/fc-angular">

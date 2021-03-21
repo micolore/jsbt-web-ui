@@ -1,13 +1,4 @@
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 系统模块的路由
- * @email: 3300536651@qq.com
- * @Date: 2019-04-12 16:39:30
- * @LastEditTime: 2019-10-14 14:15:53
- */
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
 
 export const Routers: Routes = [
   {

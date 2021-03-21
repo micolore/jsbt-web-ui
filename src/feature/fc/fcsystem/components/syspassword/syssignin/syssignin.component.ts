@@ -1,11 +1,3 @@
-/*
- * @Author: honghong
- * @LastEditors: honghong
- * @Description: 登录
- * @email: 3300536651@qq.com
- * @Date: 2019-04-16 15:57:43
- * @LastEditTime: 2020-03-06 15:04:42
- */
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.dev';
@@ -69,7 +61,9 @@ export class SyssigninComponent implements OnInit {
 
   login(): void {
     if (this.verifyCode.fcShowError === 'N') {
-      if (this.loginValid(this.userId, this.password)) {
+      const checkLoginReult = this.loginValid(this.userId, this.password);
+      console.info("checkLoginReult:",checkLoginReult)
+      if (checkLoginReult) {
         this.hasError = false;
         CacheService.setS('userinfo', { USERCODE: 'admin' });
         CacheService.setS('token', 'ab2be4ef08c0418bab13a6a88c9772e7');
@@ -86,18 +80,18 @@ export class SyssigninComponent implements OnInit {
     }
   }
   /**
-   * 临时进行修改
+   * 临时进行修改,直接进行跳过
    * @param userId 
    * @param password 
    */
-  loginValid(userId: string, password: string): boolean {
+  loginValidDep(userId: string, password: string): boolean {
 
     return true;
   }
   /**
    * 登录验证
    */
-  loginValidDep(userId: string, password: string): boolean {
+  loginValid(userId: string, password: string): boolean {
 
     // 此次登录时间和上次登录时间比较
     let diffMinutesTime: number;
@@ -142,10 +136,12 @@ export class SyssigninComponent implements OnInit {
           LockedTime: '' // '2020-03-02 10:28:59'
         };
         CommonService.addCookie('LoginValidationRule', JSON.stringify(this.validationRule), 0);
+        let result = false;
+        //请求服务器
         this.userService.login(this.userId, this.password, this.nowTime).subscribe(res => {
-          if (res.code === '0') {
+          if (res.code ==="0") {
             // 密码正确
-            return true;
+            result = true;
           } else {
             // 密码错误
             this.validationRule.AttemptNumber++;
@@ -158,9 +154,9 @@ export class SyssigninComponent implements OnInit {
               this.hasError = true;
               this.validationRule.AttemptNumber++;
             }
-            return false;
           }
         });
+        return result ;
       }
     } else {
       CommonService.addCookie('LoginValidationRule', JSON.stringify(this.validationRule), 0);

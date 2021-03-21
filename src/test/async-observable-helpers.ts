@@ -1,12 +1,4 @@
 /*
- * @Author: honghong
- * @Date: 2020-02-20 21:23:25
- * @LastEditors: honghong
- * @LastEditTime: 2020-02-20 21:23:25
- * @Description: 
- * @email: 3300536651@qq.com
- */
-/*
 * Mock async observables that return asynchronously.
 * The observable either emits once and completes or errors.
 *
